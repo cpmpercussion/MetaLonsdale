@@ -25,6 +25,7 @@
     self.notePoint = notePoint;
     self.loopTime = loopTime /1000; //convert from Milliseconds to Seconds
     self.delegate = delegate;
+    self.enabled = YES;
     
     //NSLog([NSString stringWithFormat:@"Loop created with LoopsLeft:%d and LoopTime:%f seconds.", self.loopsLeft, self.loopTime]);
     
@@ -45,12 +46,8 @@
 -(void) playLoopingNote {
     
     // Tell Delegate to play the note
-    if ([self.delegate respondsToSelector:@selector(loopingNotePlayed:)]) {
-        
+    if (self.enabled && [self.delegate respondsToSelector:@selector(loopingNotePlayed:)]) {
         [self.delegate loopingNotePlayed:self.notePoint];
-        //NSLog(@"Play message sent to delegate");
-    } else {
-        //NSLog(@"Failed to send play message to delegate.");
     }
     
     // Take one away from loops Left
@@ -72,6 +69,14 @@
 
 -(void) scheduleLoop {
     [NSTimer scheduledTimerWithTimeInterval:self.loopTime target:self selector:@selector(playLoopingNote) userInfo:Nil repeats:NO];    
+}
+
+-(void) enable {
+    self.enabled = YES;
+}
+
+-(void) disable {
+    self.enabled = NO;
 }
 
 @end

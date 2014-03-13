@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MetatoneViewController.h"
 
 @interface MetatoneAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (weak, nonatomic) MetatoneViewController *metatoneViewController;
+
 
 @end

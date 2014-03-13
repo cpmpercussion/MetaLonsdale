@@ -20,10 +20,13 @@
 @property (nonatomic) int loopsLeft;
 @property (nonatomic) float loopTime;
 @property (weak,nonatomic) id<LoopingNoteDelegate> delegate;
+@property (nonatomic) bool enabled;
 
 - (LoopingNote *) initWithNotePoint:(CGPoint) notePoint LoopTime:(int) loopTime andDelegate:(id) delegate;
 
 -(void) scheduleLoop;
+-(void) disable;
+-(void) enable;
 
 @end
 

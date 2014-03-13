@@ -4,13 +4,7 @@
 <dict>
 	<key>PreferenceSpecifiers</key>
 	<array>
-        <dict>
-			<key>Type</key>
-			<string>PSGroupSpecifier</string>
-			<key>Title</key>
-			<string>General</string>
-		</dict>
-        <dict>
+		<dict>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 			<key>Title</key>
@@ -28,7 +22,7 @@
 		</dict>
 		<dict>
 			<key>DefaultValue</key>
-			<true/>
+			<false/>
 			<key>TrueValue</key>
 			<true/>
 			<key>FalseValue</key>

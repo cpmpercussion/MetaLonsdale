@@ -15,5 +15,13 @@
 
 
 @interface MetatoneViewController : UIViewController <PdReceiverDelegate, LoopingNoteDelegate,MetatoneNetworkManagerDelegate>
+@property (weak, nonatomic) IBOutlet UISwitch *loopSwitch;
+@property (weak, nonatomic) IBOutlet UISwitch *fieldSwitch;
+@property (weak, nonatomic) IBOutlet UISwitch *cymbalSwitch;
+@property (weak, nonatomic) IBOutlet UISwitch *noteSwitch;
+
+- (void)setupOscLogging;
+- (void)stopOscLogging;
+- (void)clearAllLoopedNotes;
 
 @end
