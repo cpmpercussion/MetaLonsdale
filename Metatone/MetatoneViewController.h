@@ -17,8 +17,9 @@
 @interface MetatoneViewController : UIViewController <PdReceiverDelegate, LoopingNoteDelegate,MetatoneNetworkManagerDelegate>
 @property (weak, nonatomic) IBOutlet UISwitch *loopSwitch;
 @property (weak, nonatomic) IBOutlet UISwitch *fieldSwitch;
-@property (weak, nonatomic) IBOutlet UISwitch *cymbalSwitch;
-@property (weak, nonatomic) IBOutlet UISwitch *noteSwitch;
+
+@property (strong, nonatomic) NSString* lastGesture;
+@property (nonatomic) int sameGestureCount;
 
 - (void)setupOscLogging;
 - (void)stopOscLogging;

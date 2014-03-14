@@ -27,6 +27,8 @@
 #define METATONE_RESET_MESSAGE @"RESET"
 #define METATONE_TAPMODE_MESSAGE @"TAPMODE"
 
+#define LOOPED_NOTE_LIMIT 200
+
 
 //@interface UITouch (Private)
 //-(float)_pathMajorRadius;
@@ -56,6 +58,11 @@
 @end
 
 @implementation MetatoneViewController
+
+- (NSMutableArray *) loopedNotes {
+    if (!_loopedNotes) _loopedNotes = [[NSMutableArray alloc] init];
+    return _loopedNotes;
+}
 
 - (PdAudioController *) audioController
 {
@@ -150,6 +157,7 @@ void arraysize_setup();
     } else if (choice == 4) {
         [self.backgroundImage setImage:[UIImage imageNamed:@"LonsdaleTradersWall.jpg"]];
     }
+    self.sameGestureCount = 0;
 }
 
 #pragma mark - Note Methods
@@ -165,26 +173,19 @@ void arraysize_setup();
     }
 }
 
-
-
 -(void)scheduleRecurringTappedNote:(CGPoint)tapPoint {
-    // max 100 notes in the loopedNotes array.
-    //TODO: make sure looped note array actually contains looped notes currently broken.
-    NSLog(@"Scheduling a Looped Note");
     LoopingNote *note = [[LoopingNote alloc] initWithNotePoint:tapPoint LoopTime:LOOP_TIME andDelegate:self];
-    if ([self.loopedNotes count] > 100) [self.loopedNotes removeObjectAtIndex:0];
+    if ([self.loopedNotes count] > LOOPED_NOTE_LIMIT) {
+        LoopingNote *firstNote = [self.loopedNotes objectAtIndex:0];
+        [firstNote disable];
+        [self.loopedNotes removeObject:firstNote];
+    }
     [self.loopedNotes addObject:note];
-    NSLog([note description]);
-    NSLog([self.loopedNotes description]);
 }
 
 -(void)clearAllLoopedNotes {
-    //TODO: make sure all looped notes get disabled, currently broken.
-    NSLog(@"Clearing Looped Notes");
-    NSLog(@"Number of looped notes: %d", [self.loopedNotes count]);
     for (LoopingNote *note in self.loopedNotes) {
         [note disable];
-        NSLog(@"disabled a note");
     }
     [self.loopedNotes removeAllObjects];
 }
@@ -276,20 +277,6 @@ void arraysize_setup();
 
 #pragma mark - UI
 
-// Cluster Auto Play Switch
-- (IBAction)clustersOn:(UISwitch *)sender {
-    if (self.oscLogging) [self.networkManager sendMesssageSwitch:@"clustersOn" On:sender.on];
-    float value = (sender.on) ? 1 : 0;
-    [PdBase sendFloat:value toReceiver:@"autoBowl"];
-}
-
-// Cymbal Auto Play Switch
-- (IBAction)cymbalsOn:(UISwitch *)sender {
-    if (self.oscLogging) [self.networkManager sendMesssageSwitch:@"cymbalsOn" On:sender.on];
-    float value = (sender.on) ? 1 : 0;
-    [PdBase sendFloat:value toReceiver:@"autoCymbal"];
-}
-
 // Field Recording auto play Switch
 - (IBAction)fieldsOn:(UISwitch *)sender {
     if (self.oscLogging) [self.networkManager sendMesssageSwitch:@"fieldsOn" On:sender.on];
@@ -317,11 +304,6 @@ void arraysize_setup();
                                    withState:[NSString stringWithFormat:@"%d",self.tapMode]];
     
     if (arc4random_uniform(100)>75) [self randomiseScale];
-}
-
-// Scale Button
-- (IBAction)changeScale:(UIButton *)sender {
-    [self randomiseScale];
 }
 
 // Scale Method
@@ -397,7 +379,7 @@ void arraysize_setup();
 }
 
 -(void) didReceiveMetatoneMessageFrom:(NSString *)device withName:(NSString *)name andState:(NSString *)state {
-    NSLog([NSString stringWithFormat:@"METATONE: Received app message from:%@ with state:%@",device,state]);
+    NSLog(@"METATONE: Received app message from:%@ with state:%@",device,state);
     
     if ([name isEqualToString:METATONE_SCALE_MESSAGE]) {
         NSLog(@"METATONE: Scale Message received.");
@@ -420,6 +402,42 @@ void arraysize_setup();
             self.tapLooping = YES;
             [self.loopSwitch setOn:YES animated:YES];
         }
+    }
+}
+
+-(void)didReceiveGestureMessageFor:(NSString *)device withClass:(NSString *)class {
+    if ([class isEqualToString:self.lastGesture]) {
+        self.sameGestureCount++;
+    } else {
+        self.sameGestureCount = 0;
+    }
+    
+    if (self.sameGestureCount > 3 && arc4random_uniform(100)>85) {
+        self.sameGestureCount = 0;
+        if (arc4random_uniform(10)>5) {
+            [self.loopSwitch setOn:!self.loopSwitch.on animated:YES];
+            [self loopingOn:self.loopSwitch];
+            NSLog(@"Loops Changed by Classifier");
+        } else {
+            [self.fieldSwitch setOn:!self.fieldSwitch.on animated:YES];
+            [self fieldsOn:self.fieldSwitch];
+            NSLog(@"Fields Changed by Classifier");
+        }
+    }
+    self.lastGesture = class;
+}
+
+-(void)didReceiveEnsembleState:(NSString *)state withSpread:(NSNumber *)spread withRatio:(NSNumber *)ratio {
+    
+}
+
+-(void)didReceiveEnsembleEvent:(NSString *)event forDevice:(NSString *)device withMeasure:(NSNumber *)measure {
+    //if (arc4random_uniform(100)>75) [self randomiseScale];
+    if (arc4random_uniform(100)>75) {
+        [self reset:nil];
+        NSLog(@"Ensemble Event Received: Reset.");
+    } else {
+        NSLog(@"Ensemble Event Received: No Action.");
     }
 }
 

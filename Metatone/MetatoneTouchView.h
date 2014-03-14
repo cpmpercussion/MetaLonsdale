@@ -14,6 +14,9 @@
 @property (strong, nonatomic) NSMutableArray *noteCirclePoints;
 
 @property (strong, nonatomic) CALayer *movingTouchCircleLayer;
+@property (strong, nonatomic) CALayer *touchCirclesLayer;
+@property (strong, nonatomic) CALayer *loopCirclesLayer;
+@property (strong, nonatomic) CALayer *animationLayer;
 
 -(void) drawTouchCircleAt:(CGPoint) point;
 -(void) drawNoteCircleAt:(CGPoint) point;

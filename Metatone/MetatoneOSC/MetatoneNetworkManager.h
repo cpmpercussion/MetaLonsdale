@@ -4,15 +4,11 @@
 //
 //  Created by Charles Martin on 10/04/13.
 //  Copyright (c) 2013 Charles Martin. All rights reserved.
+//  Updated Version to work with F53OSC.
 //
 
 #import <Foundation/Foundation.h>
-#import "AsyncSocket.h"
-#import "CocoaOSC.h"
-#import "RegexKitLite.h"
-#import "NSString+CpmOscAdditions.h"
-#import "NSArray+CpmOscAdditions.h"
-#import "CocoaOSC/OSCConnection.h"
+#import "F53OSC.h"
 
 // IP Address method
 #import <ifaddrs.h>
@@ -24,16 +20,23 @@
 -(void) loggingServerFoundWithAddress: (NSString *) address andPort: (int) port andHostname:(NSString *) hostname;
 -(void) stoppedSearchingForLoggingServer;
 -(void) didReceiveMetatoneMessageFrom:(NSString*)device withName:(NSString*)name andState:(NSString*)state;
+-(void) didReceiveGestureMessageFor:(NSString*)device withClass:(NSString*)class;
+-(void) didReceiveEnsembleState:(NSString*)state withSpread:(NSNumber*)spread withRatio:(NSNumber*)ratio;
+-(void) didReceiveEnsembleEvent:(NSString*)event forDevice:(NSString*)device withMeasure:(NSNumber*)measure;
 
 @end
 
-@interface MetatoneNetworkManager : NSObject <OSCConnectionDelegate, NSNetServiceDelegate, NSNetServiceBrowserDelegate>
+@interface MetatoneNetworkManager : NSObject <F53OSCPacketDestination,F53OSCClientDelegate, NSNetServiceDelegate, NSNetServiceBrowserDelegate>
 
-@property (strong, nonatomic) OSCConnection *connection;
-@property (strong, nonatomic) NSString *remoteIPAddress;
-@property (nonatomic) NSInteger remotePort;
-@property (strong, nonatomic) NSString *remoteHostname;
+@property (strong,nonatomic) F53OSCClient *oscClient;
+@property (strong,nonatomic) F53OSCServer *oscServer;
+
+//@property (strong, nonatomic) OSCConnection *connection;
+@property (strong, nonatomic) NSString *loggingIPAddress;
+@property (nonatomic) NSInteger loggingPort;
+@property (strong, nonatomic) NSString *loggingHostname;
 @property (strong, nonatomic) NSString *deviceID;
+@property (strong,nonatomic) NSString *appID;
 @property (strong, nonatomic) NSString *localIPAddress;
 @property (strong, nonatomic) NSNetService *metatoneNetService;
 @property (strong, nonatomic) NSNetServiceBrowser *oscLoggerServiceBrowser;
