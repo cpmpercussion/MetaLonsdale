@@ -103,7 +103,7 @@
 
 
 +(int)lochrian:(int)base withNote:(int)note {
-    NSArray *scale = @[@0,@1,@3,@5,@6,@8,@10];
+    NSArray *scale = LOCHRIAN;
     
     int octave = note / [scale count];
     int scalenote = [scale[note % [scale count]] intValue];
