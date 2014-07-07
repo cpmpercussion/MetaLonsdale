@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
         <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
@@ -63,11 +63,8 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iga-Xr-JQ2">
-                                <rect key="frame" x="42" y="711" width="51" height="27"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="27" id="Zpt-Hn-UD3"/>
-                                </constraints>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iga-Xr-JQ2">
+                                <rect key="frame" x="42" y="711" width="51" height="31"/>
                                 <color key="onTintColor" red="0.56862747669219971" green="0.30588236451148987" blue="0.26274511218070984" alpha="1" colorSpace="deviceRGB"/>
                                 <connections>
                                     <action selector="loopingOn:" destination="2" eventType="valueChanged" id="hes-bp-rQg"/>
@@ -81,10 +78,11 @@
                                 </connections>
                             </switch>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZb-Qb-3tL">
-                                <rect key="frame" x="903" y="710" width="79" height="28"/>
+                                <rect key="frame" x="844" y="710" width="138" height="31"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.70999999999999996" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="79" id="Fpa-eZ-zAM"/>
+                                    <constraint firstAttribute="width" constant="138" id="Fpa-eZ-zAM"/>
+                                    <constraint firstAttribute="height" constant="31" id="O7W-zJ-N6W"/>
                                 </constraints>
                                 <color key="tintColor" red="0.7568628191947937" green="0.67058825492858887" blue="0.56862747669219971" alpha="1" colorSpace="deviceRGB"/>
                                 <state key="normal" title="sounds">
@@ -95,7 +93,7 @@
                                     <action selector="reset:" destination="2" eventType="touchUpInside" id="Q6T-9a-5sZ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="scale" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xqQ-6o-RUs">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="scale" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xqQ-6o-RUs">
                                 <rect key="frame" x="844" y="670" width="138" height="31"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.11" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -110,22 +108,21 @@
                         <constraints>
                             <constraint firstItem="aMO-F3-pwJ" firstAttribute="trailing" secondItem="5" secondAttribute="trailing" id="233-6A-caC"/>
                             <constraint firstAttribute="trailing" secondItem="xqQ-6o-RUs" secondAttribute="trailing" constant="42" id="4NM-Ik-PPf"/>
-                            <constraint firstItem="uZb-Qb-3tL" firstAttribute="centerY" secondItem="Iga-Xr-JQ2" secondAttribute="centerY" id="8cE-JQ-56g"/>
-                            <constraint firstAttribute="bottom" secondItem="Iga-Xr-JQ2" secondAttribute="bottom" constant="30" id="9ev-kI-hHu"/>
                             <constraint firstItem="1ZF-I0-Rwa" firstAttribute="top" secondItem="Y7M-h0-H85" secondAttribute="top" id="BFQ-qt-Yzx"/>
                             <constraint firstAttribute="bottom" secondItem="Y7M-h0-H85" secondAttribute="bottom" constant="20" symbolic="YES" id="ExQ-0Z-3NL"/>
                             <constraint firstItem="aMO-F3-pwJ" firstAttribute="top" secondItem="5" secondAttribute="top" id="Ip8-y1-mPj"/>
                             <constraint firstItem="aMO-F3-pwJ" firstAttribute="leading" secondItem="5" secondAttribute="leading" id="LNe-Tz-xOJ"/>
                             <constraint firstItem="aMO-F3-pwJ" firstAttribute="bottom" secondItem="5" secondAttribute="bottom" id="MCY-Eq-bIv"/>
                             <constraint firstItem="1ZF-I0-Rwa" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="42" id="MMM-Lu-V2F"/>
-                            <constraint firstItem="1ZF-I0-Rwa" firstAttribute="leading" secondItem="Iga-Xr-JQ2" secondAttribute="leading" id="TVA-oa-pKm"/>
+                            <constraint firstItem="Iga-Xr-JQ2" firstAttribute="top" secondItem="1ZF-I0-Rwa" secondAttribute="bottom" constant="10" id="Qh0-vc-6bS"/>
                             <constraint firstItem="xqQ-6o-RUs" firstAttribute="top" secondItem="Y7M-h0-H85" secondAttribute="top" id="Wzc-Sy-NCT"/>
                             <constraint firstItem="qj2-vR-65x" firstAttribute="top" secondItem="5" secondAttribute="top" id="aoa-19-egM"/>
+                            <constraint firstItem="Iga-Xr-JQ2" firstAttribute="leading" secondItem="1ZF-I0-Rwa" secondAttribute="leading" id="dpg-Rr-esH"/>
+                            <constraint firstItem="uZb-Qb-3tL" firstAttribute="top" secondItem="xqQ-6o-RUs" secondAttribute="bottom" constant="9" id="jpm-AP-jdu"/>
                             <constraint firstItem="Y7M-h0-H85" firstAttribute="centerX" secondItem="qj2-vR-65x" secondAttribute="centerX" id="k5l-xM-cyo"/>
                             <constraint firstItem="qj2-vR-65x" firstAttribute="trailing" secondItem="5" secondAttribute="trailing" id="kcf-z8-e1C"/>
                             <constraint firstItem="xqQ-6o-RUs" firstAttribute="trailing" secondItem="uZb-Qb-3tL" secondAttribute="trailing" id="nDX-a7-YOA"/>
                             <constraint firstItem="qj2-vR-65x" firstAttribute="bottom" secondItem="5" secondAttribute="bottom" id="sNr-EL-hut"/>
-                            <constraint firstItem="Iga-Xr-JQ2" firstAttribute="bottom" secondItem="uZb-Qb-3tL" secondAttribute="bottom" id="sOZ-9h-81i"/>
                             <constraint firstItem="qj2-vR-65x" firstAttribute="leading" secondItem="5" secondAttribute="leading" id="ua2-sU-6Jo"/>
                             <constraint firstItem="1ZF-I0-Rwa" firstAttribute="bottom" secondItem="xqQ-6o-RUs" secondAttribute="bottom" id="ylR-fB-wov"/>
                         </constraints>

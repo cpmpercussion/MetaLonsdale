@@ -34,7 +34,6 @@
 		5639BB5A18D150F200CD6759 /* F53OSCTimeTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 5639BB4218D150F200CD6759 /* F53OSCTimeTag.m */; };
 		5639BB5B18D150F200CD6759 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 5639BB4418D150F200CD6759 /* GCDAsyncSocket.m */; };
 		5639BB5C18D150F200CD6759 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 5639BB4618D150F200CD6759 /* GCDAsyncUdpSocket.m */; };
-		5639BB5D18D150F200CD6759 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5639BB4718D150F200CD6759 /* LICENSE.txt */; };
 		5639BB5E18D150F200CD6759 /* MetatoneNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5639BB4918D150F200CD6759 /* MetatoneNetworkManager.m */; };
 		5639BB5F18D150F200CD6759 /* NSData+F53OSCBlob.m in Sources */ = {isa = PBXBuildFile; fileRef = 5639BB4B18D150F200CD6759 /* NSData+F53OSCBlob.m */; };
 		5639BB6018D150F200CD6759 /* NSDate+F53OSCTimeTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 5639BB4D18D150F200CD6759 /* NSDate+F53OSCTimeTag.m */; };
@@ -58,8 +57,6 @@
 		565602051711957D00E819A3 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 565602041711957D00E819A3 /* SenTestingKit.framework */; };
 		565602061711957D00E819A3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 565601DD1711957D00E819A3 /* UIKit.framework */; };
 		565602071711957D00E819A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 565601DF1711957D00E819A3 /* Foundation.framework */; };
-		5656020F1711957D00E819A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5656020D1711957D00E819A3 /* InfoPlist.strings */; };
-		565602121711957D00E819A3 /* MetatoneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 565602111711957D00E819A3 /* MetatoneTests.m */; };
 		5659731B17AC9FF100D4158A /* gong78.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5659731A17AC9FF100D4158A /* gong78.wav */; };
 		566FCB63171680CB00E4E83B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 566FCB62171680CB00E4E83B /* CoreMotion.framework */; };
 		568AD1F31786975A004A6257 /* crotale-C.wav in Resources */ = {isa = PBXBuildFile; fileRef = 568AD1F11786975A004A6257 /* crotale-C.wav */; };
@@ -519,7 +516,6 @@
 		5639BB4418D150F200CD6759 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
 		5639BB4518D150F200CD6759 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
 		5639BB4618D150F200CD6759 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
-		5639BB4718D150F200CD6759 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		5639BB4818D150F200CD6759 /* MetatoneNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetatoneNetworkManager.h; sourceTree = "<group>"; };
 		5639BB4918D150F200CD6759 /* MetatoneNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MetatoneNetworkManager.m; sourceTree = "<group>"; };
 		5639BB4A18D150F200CD6759 /* NSData+F53OSCBlob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+F53OSCBlob.h"; sourceTree = "<group>"; };
@@ -551,10 +547,6 @@
 		565601FC1711957D00E819A3 /* MetatoneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MetatoneViewController.m; sourceTree = "<group>"; };
 		565602031711957D00E819A3 /* Metatone LonsdaleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Metatone LonsdaleTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		565602041711957D00E819A3 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		5656020C1711957D00E819A3 /* Metatone LonsdaleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Metatone LonsdaleTests-Info.plist"; sourceTree = "<group>"; };
-		5656020E1711957D00E819A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		565602101711957D00E819A3 /* MetatoneTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetatoneTests.h; sourceTree = "<group>"; };
-		565602111711957D00E819A3 /* MetatoneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MetatoneTests.m; sourceTree = "<group>"; };
 		5659731A17AC9FF100D4158A /* gong78.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = gong78.wav; sourceTree = "<group>"; };
 		566FCB62171680CB00E4E83B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		568AD1F11786975A004A6257 /* crotale-C.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "crotale-C.wav"; sourceTree = "<group>"; };
@@ -1034,7 +1026,6 @@
 				5639BB4418D150F200CD6759 /* GCDAsyncSocket.m */,
 				5639BB4518D150F200CD6759 /* GCDAsyncUdpSocket.h */,
 				5639BB4618D150F200CD6759 /* GCDAsyncUdpSocket.m */,
-				5639BB4718D150F200CD6759 /* LICENSE.txt */,
 				5639BB4818D150F200CD6759 /* MetatoneNetworkManager.h */,
 				5639BB4918D150F200CD6759 /* MetatoneNetworkManager.m */,
 				5639BB4A18D150F200CD6759 /* NSData+F53OSCBlob.h */,
@@ -1056,7 +1047,6 @@
 			children = (
 				5639BB2F18D150F200CD6759 /* MetatoneOSC */,
 				565601E31711957D00E819A3 /* Metatone */,
-				5656020A1711957D00E819A3 /* MetatoneTests */,
 				565601DC1711957D00E819A3 /* Frameworks */,
 				565601DB1711957D00E819A3 /* Products */,
 				56BD3FB11712FA4C004FBB65 /* libpd.xcodeproj */,
@@ -1122,25 +1112,6 @@
 				565601EF1711957D00E819A3 /* Default.png */,
 				565601F11711957D00E819A3 /* Default@2x.png */,
 				565601F31711957D00E819A3 /* Default-568h@2x.png */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		5656020A1711957D00E819A3 /* MetatoneTests */ = {
-			isa = PBXGroup;
-			children = (
-				565602101711957D00E819A3 /* MetatoneTests.h */,
-				565602111711957D00E819A3 /* MetatoneTests.m */,
-				5656020B1711957D00E819A3 /* Supporting Files */,
-			);
-			path = MetatoneTests;
-			sourceTree = "<group>";
-		};
-		5656020B1711957D00E819A3 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				5656020C1711957D00E819A3 /* Metatone LonsdaleTests-Info.plist */,
-				5656020D1711957D00E819A3 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -2030,7 +2001,6 @@
 				56BD3FA21712FA3A004FBB65 /* u_show-help.pd in Resources */,
 				56BD3FA31712FA3A004FBB65 /* u_show.pd in Resources */,
 				56BD3FA41712FA3A004FBB65 /* u_sigm-help.pd in Resources */,
-				5639BB5D18D150F200CD6759 /* LICENSE.txt in Resources */,
 				56BD3FA51712FA3A004FBB65 /* u_sigm.pd in Resources */,
 				56BD3FA61712FA3A004FBB65 /* u_spinner-help.pd in Resources */,
 				56BD3FA71712FA3A004FBB65 /* u_spinner.pd in Resources */,
@@ -2079,7 +2049,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5656020F1711957D00E819A3 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2135,7 +2104,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				565602121711957D00E819A3 /* MetatoneTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2172,14 +2140,6 @@
 				565601F91711957D00E819A3 /* en */,
 			);
 			name = MainStoryboard_iPad.storyboard;
-			sourceTree = "<group>";
-		};
-		5656020D1711957D00E819A3 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5656020E1711957D00E819A3 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

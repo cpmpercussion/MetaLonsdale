@@ -30,9 +30,9 @@
 #define LOOPED_NOTE_LIMIT 200
 
 
-//@interface UITouch (Private)
-//-(float)_pathMajorRadius;
-//@end
+@interface UITouch (Private)
+-(float)_pathMajorRadius;
+@end
 
 
 @interface MetatoneViewController () {
@@ -144,6 +144,12 @@ void arraysize_setup();
     self.scaleMode = 0;
     [self.scaleLabel setText:@"F Mixo"];
     
+    self.sameGestureCount = 0;
+    
+    [self changeBackgroundImage];
+}
+
+-(void)changeBackgroundImage {
     // Setup background image
     int choice = arc4random_uniform(5);
     if (choice == 0) {
@@ -157,8 +163,8 @@ void arraysize_setup();
     } else if (choice == 4) {
         [self.backgroundImage setImage:[UIImage imageNamed:@"LonsdaleTradersWall.jpg"]];
     }
-    self.sameGestureCount = 0;
 }
+
 
 #pragma mark - Note Methods
 
@@ -207,21 +213,19 @@ void arraysize_setup();
 {
     UITouch *touch = [touches anyObject];
     CGPoint touchPoint = [touch locationInView:self.view];
-    CGFloat distance = [self calculateDistanceFromCenter:touchPoint] /600;
+//    CGFloat distance = [self calculateDistanceFromCenter:touchPoint] /600;
     
-    // Measure Acceleration
-    CMDeviceMotion *motion = self.motionManager.deviceMotion;
-    int velocity = (int) (ABS(motion.userAcceleration.z * 3000) + 5) % 128;
-
-    // Print touch Area.
-    //int area = (int) pow(touch._pathMajorRadius, 2)/4;
-    //area = area + 10;
-    //  NSLog([NSString stringWithFormat:@"Z Accel: %d, Area: %d", velocity,area]);
+    // Velocity.
+    float radius = (touch._pathMajorRadius - 5.0)/16;
+    int velocity = floorf(15 + (radius * 115));
+    if (velocity > 127) velocity = 127;
+    if (velocity < 0) velocity = 0;
     
     // Send to Pd - receiver
     if (self.tapMode == TAP_MODE_FIELDS || self.tapMode == TAP_MODE_FIELDS) {
         [PdBase sendBangToReceiver:@"touch" ]; // makes a small sound
-        [PdBase sendFloat:distance toReceiver:@"tapdistance" ];
+//        [PdBase sendFloat:distance toReceiver:@"tapdistance" ];
+        [PdBase sendFloat:velocity/100.0 toReceiver:@"tapdistance"];
     }
     
     // Send to Pd as a midi note.
@@ -237,12 +241,15 @@ void arraysize_setup();
 
 
 
+
+
 -(void)sendMidiNoteFromPoint:(CGPoint) point withVelocity:(int) vel
 {
     CGFloat distance = [self calculateDistanceFromCenter:point]/600;
     // Testing sending a midi message as well.
-    int velocity = ((int) 25 + 100 * (point.y / 800));
-    velocity = (int) (velocity * 0.2) + (vel * 0.8); // include the tap acceleration measurement.
+    //    int velocity = ((int) 25 + 100 * (point.y / 800));
+    //    velocity = (int) (velocity * 0.2) + (vel * 0.8); // include the tap acceleration measurement.
+    int velocity = vel;
     int note = (int) (distance * 35);
     
     if (self.scaleMode == SCALE_MODE_F_MIXO) {
@@ -432,13 +439,22 @@ void arraysize_setup();
 }
 
 -(void)didReceiveEnsembleEvent:(NSString *)event forDevice:(NSString *)device withMeasure:(NSNumber *)measure {
-    //if (arc4random_uniform(100)>75) [self randomiseScale];
-    if (arc4random_uniform(100)>75) {
-        [self reset:nil];
-        NSLog(@"Ensemble Event Received: Reset.");
-    } else {
-        NSLog(@"Ensemble Event Received: No Action.");
-    }
+    [self reset:nil];
+    [self changeBackgroundImage];
+    NSLog(@"Ensemble Event Received: Reset.");
+//    //if (arc4random_uniform(100)>75) [self randomiseScale];
+//    if (arc4random_uniform(100)>75) {
+//        [self reset:nil];
+//        NSLog(@"Ensemble Event Received: Reset.");
+//    } else {
+//        NSLog(@"Ensemble Event Received: No Action.");
+//    }
 }
+
+- (BOOL)prefersStatusBarHidden
+{
+    return YES;
+}
+
 
 @end
