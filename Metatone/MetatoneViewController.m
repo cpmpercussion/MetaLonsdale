@@ -5,7 +5,6 @@
 //  Created by Charles Martin on 7/04/13.
 //  Copyright (c) 2013 Charles Martin. All rights reserved.
 //
-
 #import "MetatoneViewController.h"
 #import "MetatoneTouchView.h"
 #import "ScaleMaker.h"
@@ -29,11 +28,9 @@
 
 #define LOOPED_NOTE_LIMIT 200
 
-
 @interface UITouch (Private)
 -(float)_pathMajorRadius;
 @end
-
 
 @interface MetatoneViewController () {
     NSOperationQueue *queue;
@@ -76,12 +73,9 @@
     
     // Randomise Sounds each time the app is back in focus
     [PdBase sendBangToReceiver:@"randomiseSounds"];
-    
     // Setup Networking
     //[[NSUserDefaults standardUserDefaults] synchronize];
-    NSLog(@"appeared.");
 }
-
 
 void arraysize_setup();
 
@@ -105,7 +99,6 @@ void arraysize_setup();
     [self.audioController print];
     [PdBase setDelegate:self];
     [PdBase sendBangToReceiver:@"randomiseSounds"];
-    
     
     // Setup Logging
     if ([[NSUserDefaults standardUserDefaults] boolForKey:@"OSCLogging"]) {
@@ -165,9 +158,7 @@ void arraysize_setup();
     }
 }
 
-
 #pragma mark - Note Methods
-
 -(void)triggerTappedNote:(CGPoint)tapPoint {
     // Send to Pd
     if (self.tapMode == TAP_MODE_FIELDS || self.tapMode == TAP_MODE_FIELDS) {
