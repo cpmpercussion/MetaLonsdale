@@ -52,6 +52,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImage;
 @property (nonatomic) int tapMode;
 @property (nonatomic) int scaleMode;
+@property (strong, nonatomic) NSDate* timeOfLastNewIdea;
 @end
 
 @implementation MetatoneViewController
@@ -140,6 +141,7 @@ void arraysize_setup();
     self.sameGestureCount = 0;
     
     [self changeBackgroundImage];
+    self.timeOfLastNewIdea = [NSDate date];
 }
 
 -(void)changeBackgroundImage {
@@ -430,16 +432,15 @@ void arraysize_setup();
 }
 
 -(void)didReceiveEnsembleEvent:(NSString *)event forDevice:(NSString *)device withMeasure:(NSNumber *)measure {
-    [self reset:nil];
-    [self changeBackgroundImage];
-    NSLog(@"Ensemble Event Received: Reset.");
-//    //if (arc4random_uniform(100)>75) [self randomiseScale];
-//    if (arc4random_uniform(100)>75) {
-//        [self reset:nil];
-//        NSLog(@"Ensemble Event Received: Reset.");
-//    } else {
-//        NSLog(@"Ensemble Event Received: No Action.");
-//    }
+    if ([self.timeOfLastNewIdea timeIntervalSinceNow] < -10.0) {
+        [self reset:nil];
+        [self changeBackgroundImage];
+        NSLog(@"Ensemble Event Received: Reset.");
+        self.timeOfLastNewIdea = [NSDate date];
+    } else {
+        NSLog(@"Ensemble Event Received: Too soon after last event!");
+    }
+
 }
 
 - (BOOL)prefersStatusBarHidden
