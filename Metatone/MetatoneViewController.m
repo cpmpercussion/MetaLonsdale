@@ -343,7 +343,7 @@ void arraysize_setup();
     
     if (!self.networkManager) {
         self.oscLogging = NO;
-        [self.oscLoggingLabel setText:@"OSC Logging: Not Connected"];
+        [self.oscLoggingLabel setText:@"OSC Logging: Not Connected. 😓"];
         NSLog(@"OSC Logging: Not Connected");
     }
 }
@@ -358,14 +358,14 @@ void arraysize_setup();
     if (self.oscLogging) {
         // Spin the spinner - write "Searching for Logging Server" in the field
         [self.oscLoggingSpinner startAnimating];
-        [self.oscLoggingLabel setText:@"Searching for Logging Server..."];
+        [self.oscLoggingLabel setText:@"searching for server 😒"];
     }
 }
 
 -(void) loggingServerFoundWithAddress:(NSString *)address andPort:(int)port andHostname:(NSString *)hostname {
     // Stop the spinner - update info in the field
     [self.oscLoggingSpinner stopAnimating];
-    [self.oscLoggingLabel setText:[NSString stringWithFormat:@"Logging to %@\n %@:%d", hostname, address,port]];
+    [self.oscLoggingLabel setText:[NSString stringWithFormat:@"connected to %@ 👍", hostname]];
 }
 
 -(void) stoppedSearchingForLoggingServer {

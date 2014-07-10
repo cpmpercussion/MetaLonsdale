@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
         <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
@@ -28,7 +28,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <subviews>
                                     <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Rgw-kw-mAD">
-                                        <rect key="frame" x="632" y="691" width="37" height="37"/>
+                                        <rect key="frame" x="735" y="706" width="37" height="37"/>
                                     </activityIndicatorView>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="looping" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G7a-CS-fkx">
                                         <rect key="frame" x="138" y="714" width="57" height="21"/>
@@ -48,16 +48,16 @@
                                     <constraint firstAttribute="bottom" secondItem="G7a-CS-fkx" secondAttribute="bottom" constant="33" id="3mF-zI-9Sj"/>
                                     <constraint firstAttribute="bottom" secondItem="XM1-9v-N8I" secondAttribute="bottom" constant="74" id="9Wf-m6-mpP"/>
                                     <constraint firstItem="G7a-CS-fkx" firstAttribute="leading" secondItem="aMO-F3-pwJ" secondAttribute="leading" constant="138" id="Y5K-Uo-oEW"/>
-                                    <constraint firstAttribute="bottom" secondItem="Rgw-kw-mAD" secondAttribute="bottom" constant="40" id="duf-8E-6Ax"/>
+                                    <constraint firstAttribute="bottom" secondItem="Rgw-kw-mAD" secondAttribute="bottom" constant="25" id="duf-8E-6Ax"/>
                                     <constraint firstItem="XM1-9v-N8I" firstAttribute="leading" secondItem="aMO-F3-pwJ" secondAttribute="leading" constant="139" id="guW-Oy-4XX"/>
-                                    <constraint firstAttribute="trailing" secondItem="Rgw-kw-mAD" secondAttribute="trailing" constant="355" id="x7z-4t-mxv"/>
+                                    <constraint firstAttribute="trailing" secondItem="Rgw-kw-mAD" secondAttribute="trailing" constant="252" id="x7z-4t-mxv"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="OSC Logging: Connected to address 192.168.1.255" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="254" translatesAutoresizingMaskIntoConstraints="NO" id="Y7M-h0-H85">
-                                <rect key="frame" x="385" y="670" width="254" height="78"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="OSC Logging: Connected to address 192.168.1.255" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="425" translatesAutoresizingMaskIntoConstraints="NO" id="Y7M-h0-H85">
+                                <rect key="frame" x="300" y="705" width="425" height="43"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="254" id="Vxp-JX-umh"/>
-                                    <constraint firstAttribute="height" constant="78" id="w6I-b5-01I"/>
+                                    <constraint firstAttribute="width" constant="425" id="Vxp-JX-umh"/>
+                                    <constraint firstAttribute="height" constant="43" id="w6I-b5-01I"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -108,14 +108,14 @@
                         <constraints>
                             <constraint firstItem="aMO-F3-pwJ" firstAttribute="trailing" secondItem="5" secondAttribute="trailing" id="233-6A-caC"/>
                             <constraint firstAttribute="trailing" secondItem="xqQ-6o-RUs" secondAttribute="trailing" constant="42" id="4NM-Ik-PPf"/>
-                            <constraint firstItem="1ZF-I0-Rwa" firstAttribute="top" secondItem="Y7M-h0-H85" secondAttribute="top" id="BFQ-qt-Yzx"/>
+                            <constraint firstItem="1ZF-I0-Rwa" firstAttribute="top" secondItem="Y7M-h0-H85" secondAttribute="top" constant="-35" id="BFQ-qt-Yzx"/>
                             <constraint firstAttribute="bottom" secondItem="Y7M-h0-H85" secondAttribute="bottom" constant="20" symbolic="YES" id="ExQ-0Z-3NL"/>
                             <constraint firstItem="aMO-F3-pwJ" firstAttribute="top" secondItem="5" secondAttribute="top" id="Ip8-y1-mPj"/>
                             <constraint firstItem="aMO-F3-pwJ" firstAttribute="leading" secondItem="5" secondAttribute="leading" id="LNe-Tz-xOJ"/>
                             <constraint firstItem="aMO-F3-pwJ" firstAttribute="bottom" secondItem="5" secondAttribute="bottom" id="MCY-Eq-bIv"/>
                             <constraint firstItem="1ZF-I0-Rwa" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="42" id="MMM-Lu-V2F"/>
                             <constraint firstItem="Iga-Xr-JQ2" firstAttribute="top" secondItem="1ZF-I0-Rwa" secondAttribute="bottom" constant="10" id="Qh0-vc-6bS"/>
-                            <constraint firstItem="xqQ-6o-RUs" firstAttribute="top" secondItem="Y7M-h0-H85" secondAttribute="top" id="Wzc-Sy-NCT"/>
+                            <constraint firstItem="xqQ-6o-RUs" firstAttribute="top" secondItem="Y7M-h0-H85" secondAttribute="top" constant="-35" id="Wzc-Sy-NCT"/>
                             <constraint firstItem="qj2-vR-65x" firstAttribute="top" secondItem="5" secondAttribute="top" id="aoa-19-egM"/>
                             <constraint firstItem="Iga-Xr-JQ2" firstAttribute="leading" secondItem="1ZF-I0-Rwa" secondAttribute="leading" id="dpg-Rr-esH"/>
                             <constraint firstItem="uZb-Qb-3tL" firstAttribute="top" secondItem="xqQ-6o-RUs" secondAttribute="bottom" constant="9" id="jpm-AP-jdu"/>
