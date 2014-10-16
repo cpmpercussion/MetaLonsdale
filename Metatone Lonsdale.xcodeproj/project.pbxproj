@@ -48,9 +48,6 @@
 		565601E81711957D00E819A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 565601E61711957D00E819A3 /* InfoPlist.strings */; };
 		565601EA1711957D00E819A3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 565601E91711957D00E819A3 /* main.m */; };
 		565601EE1711957D00E819A3 /* MetatoneAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 565601ED1711957D00E819A3 /* MetatoneAppDelegate.m */; };
-		565601F01711957D00E819A3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 565601EF1711957D00E819A3 /* Default.png */; };
-		565601F21711957D00E819A3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 565601F11711957D00E819A3 /* Default@2x.png */; };
-		565601F41711957D00E819A3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 565601F31711957D00E819A3 /* Default-568h@2x.png */; };
 		565601F71711957D00E819A3 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 565601F51711957D00E819A3 /* MainStoryboard_iPhone.storyboard */; };
 		565601FA1711957D00E819A3 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 565601F81711957D00E819A3 /* MainStoryboard_iPad.storyboard */; };
 		565601FD1711957D00E819A3 /* MetatoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 565601FC1711957D00E819A3 /* MetatoneViewController.m */; };
@@ -64,19 +61,13 @@
 		5673A95B19EF523300B0ACDF /* PGMidiAllSources.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5673A95619EF523300B0ACDF /* PGMidiAllSources.mm */; };
 		5673A95C19EF523300B0ACDF /* PGMidiFind.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5673A95819EF523300B0ACDF /* PGMidiFind.mm */; };
 		5673A95E19EF526C00B0ACDF /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5673A95D19EF526C00B0ACDF /* CoreMIDI.framework */; };
+		5673A96019EF552700B0ACDF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5673A95F19EF552700B0ACDF /* Images.xcassets */; };
 		568AD1F31786975A004A6257 /* crotale-C.wav in Resources */ = {isa = PBXBuildFile; fileRef = 568AD1F11786975A004A6257 /* crotale-C.wav */; };
 		568AD1F41786975A004A6257 /* marimba-60.wav in Resources */ = {isa = PBXBuildFile; fileRef = 568AD1F21786975A004A6257 /* marimba-60.wav */; };
 		568AD1F817869768004A6257 /* bassdrumscratch.wav in Resources */ = {isa = PBXBuildFile; fileRef = 568AD1F517869768004A6257 /* bassdrumscratch.wav */; };
 		568AD1FA17869768004A6257 /* congascratch.wav in Resources */ = {isa = PBXBuildFile; fileRef = 568AD1F717869768004A6257 /* congascratch.wav */; };
 		568AD1FC17869810004A6257 /* canvas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 568AD1FB17869810004A6257 /* canvas.jpg */; };
-		568AD20517869876004A6257 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 568AD1FD17869876004A6257 /* Icon-72.png */; };
-		568AD20617869876004A6257 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 568AD1FE17869876004A6257 /* Icon-72@2x.png */; };
-		568AD20717869876004A6257 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 568AD1FF17869876004A6257 /* Icon-Small-50.png */; };
-		568AD20817869876004A6257 /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 568AD20017869876004A6257 /* Icon-Small-50@2x.png */; };
-		568AD20917869876004A6257 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 568AD20117869876004A6257 /* Icon-Small.png */; };
-		568AD20A17869876004A6257 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 568AD20217869876004A6257 /* Icon-Small@2x.png */; };
-		568AD20B17869876004A6257 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 568AD20317869876004A6257 /* Icon.png */; };
-		568AD20C17869876004A6257 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 568AD20417869876004A6257 /* Icon@2x.png */; };
+		56A0D8DA19EF5B2900CEF76C /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56A0D8D919EF5B2900CEF76C /* Launch Screen.xib */; };
 		56BD3E3D1712FA3A004FBB65 /* bellsynth.pd in Resources */ = {isa = PBXBuildFile; fileRef = 56BD3CC61712FA39004FBB65 /* bellsynth.pd */; };
 		56BD3E3E1712FA3A004FBB65 /* bowlsynth.pd in Resources */ = {isa = PBXBuildFile; fileRef = 56BD3CC71712FA39004FBB65 /* bowlsynth.pd */; };
 		56BD3E421712FA3A004FBB65 /* m_mixolydian.pd in Resources */ = {isa = PBXBuildFile; fileRef = 56BD3CCC1712FA39004FBB65 /* m_mixolydian.pd */; };
@@ -543,9 +534,6 @@
 		565601EB1711957D00E819A3 /* Metatone Lonsdale-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Metatone Lonsdale-Prefix.pch"; sourceTree = "<group>"; };
 		565601EC1711957D00E819A3 /* MetatoneAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetatoneAppDelegate.h; sourceTree = "<group>"; };
 		565601ED1711957D00E819A3 /* MetatoneAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MetatoneAppDelegate.m; sourceTree = "<group>"; };
-		565601EF1711957D00E819A3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		565601F11711957D00E819A3 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		565601F31711957D00E819A3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		565601F61711957D00E819A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		565601F91711957D00E819A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		565601FB1711957D00E819A3 /* MetatoneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetatoneViewController.h; sourceTree = "<group>"; };
@@ -565,19 +553,13 @@
 		5673A95719EF523300B0ACDF /* PGMidiFind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMidiFind.h; sourceTree = "<group>"; };
 		5673A95819EF523300B0ACDF /* PGMidiFind.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PGMidiFind.mm; sourceTree = "<group>"; };
 		5673A95D19EF526C00B0ACDF /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
+		5673A95F19EF552700B0ACDF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "Metatone Lonsdale/Images.xcassets"; sourceTree = "<group>"; };
 		568AD1F11786975A004A6257 /* crotale-C.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "crotale-C.wav"; sourceTree = "<group>"; };
 		568AD1F21786975A004A6257 /* marimba-60.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "marimba-60.wav"; sourceTree = "<group>"; };
 		568AD1F517869768004A6257 /* bassdrumscratch.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bassdrumscratch.wav; sourceTree = "<group>"; };
 		568AD1F717869768004A6257 /* congascratch.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = congascratch.wav; sourceTree = "<group>"; };
 		568AD1FB17869810004A6257 /* canvas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = canvas.jpg; sourceTree = "<group>"; };
-		568AD1FD17869876004A6257 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
-		568AD1FE17869876004A6257 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
-		568AD1FF17869876004A6257 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
-		568AD20017869876004A6257 /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50@2x.png"; sourceTree = "<group>"; };
-		568AD20117869876004A6257 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
-		568AD20217869876004A6257 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
-		568AD20317869876004A6257 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
-		568AD20417869876004A6257 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		56A0D8D919EF5B2900CEF76C /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
 		56BD3CC61712FA39004FBB65 /* bellsynth.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bellsynth.pd; sourceTree = "<group>"; };
 		56BD3CC71712FA39004FBB65 /* bowlsynth.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bowlsynth.pd; sourceTree = "<group>"; };
 		56BD3CCC1712FA39004FBB65 /* m_mixolydian.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = m_mixolydian.pd; sourceTree = "<group>"; };
@@ -1000,14 +982,6 @@
 		562C1985171508A600C698FF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				568AD1FD17869876004A6257 /* Icon-72.png */,
-				568AD1FE17869876004A6257 /* Icon-72@2x.png */,
-				568AD1FF17869876004A6257 /* Icon-Small-50.png */,
-				568AD20017869876004A6257 /* Icon-Small-50@2x.png */,
-				568AD20117869876004A6257 /* Icon-Small.png */,
-				568AD20217869876004A6257 /* Icon-Small@2x.png */,
-				568AD20317869876004A6257 /* Icon.png */,
-				568AD20417869876004A6257 /* Icon@2x.png */,
 				568AD1FB17869810004A6257 /* canvas.jpg */,
 				561CE01817883878009ECCFA /* LonsdaleTradersFloor.jpg */,
 				561CE01A1788387E009ECCFA /* LonsdaleTradersWood.jpg */,
@@ -1062,6 +1036,8 @@
 		565601D11711957D00E819A3 = {
 			isa = PBXGroup;
 			children = (
+				56A0D8D919EF5B2900CEF76C /* Launch Screen.xib */,
+				5673A95F19EF552700B0ACDF /* Images.xcassets */,
 				5673A94E19EF523300B0ACDF /* PGMidi */,
 				5639BB2F18D150F200CD6759 /* MetatoneOSC */,
 				565601E31711957D00E819A3 /* Metatone */,
@@ -1128,9 +1104,6 @@
 				565601E61711957D00E819A3 /* InfoPlist.strings */,
 				565601E91711957D00E819A3 /* main.m */,
 				565601EB1711957D00E819A3 /* Metatone Lonsdale-Prefix.pch */,
-				565601EF1711957D00E819A3 /* Default.png */,
-				565601F11711957D00E819A3 /* Default@2x.png */,
-				565601F31711957D00E819A3 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -1679,9 +1652,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				565601E81711957D00E819A3 /* InfoPlist.strings in Resources */,
-				565601F01711957D00E819A3 /* Default.png in Resources */,
-				565601F21711957D00E819A3 /* Default@2x.png in Resources */,
-				565601F41711957D00E819A3 /* Default-568h@2x.png in Resources */,
 				565601F71711957D00E819A3 /* MainStoryboard_iPhone.storyboard in Resources */,
 				565601FA1711957D00E819A3 /* MainStoryboard_iPad.storyboard in Resources */,
 				56BD3E3D1712FA3A004FBB65 /* bellsynth.pd in Resources */,
@@ -1976,6 +1946,7 @@
 				56BD3F601712FA3A004FBB65 /* u_bandpass2q.pd in Resources */,
 				56BD3F611712FA3A004FBB65 /* u_channelstrip-help.pd in Resources */,
 				56BD3F621712FA3A004FBB65 /* u_channelstrip.pd in Resources */,
+				56A0D8DA19EF5B2900CEF76C /* Launch Screen.xib in Resources */,
 				56BD3F631712FA3A004FBB65 /* u_cocollect-help.pd in Resources */,
 				56BD3F641712FA3A004FBB65 /* u_cocollect.pd in Resources */,
 				56BD3F651712FA3A004FBB65 /* u_collect-help.pd in Resources */,
@@ -2023,6 +1994,7 @@
 				56BD3F8F1712FA3A004FBB65 /* u_messagesaver.pd in Resources */,
 				56BD3F901712FA3A004FBB65 /* u_multisamplebank-help.pd in Resources */,
 				56BD3F911712FA3A004FBB65 /* u_multisamplebank.pd in Resources */,
+				5673A96019EF552700B0ACDF /* Images.xcassets in Resources */,
 				56BD3F921712FA3A004FBB65 /* u_multisamplebank2-help.pd in Resources */,
 				56BD3F931712FA3A004FBB65 /* u_multisamplebank2.pd in Resources */,
 				56BD3F941712FA3A004FBB65 /* u_record-help.pd in Resources */,
@@ -2061,14 +2033,6 @@
 				568AD1F817869768004A6257 /* bassdrumscratch.wav in Resources */,
 				568AD1FA17869768004A6257 /* congascratch.wav in Resources */,
 				568AD1FC17869810004A6257 /* canvas.jpg in Resources */,
-				568AD20517869876004A6257 /* Icon-72.png in Resources */,
-				568AD20617869876004A6257 /* Icon-72@2x.png in Resources */,
-				568AD20717869876004A6257 /* Icon-Small-50.png in Resources */,
-				568AD20817869876004A6257 /* Icon-Small-50@2x.png in Resources */,
-				568AD20917869876004A6257 /* Icon-Small.png in Resources */,
-				568AD20A17869876004A6257 /* Icon-Small@2x.png in Resources */,
-				568AD20B17869876004A6257 /* Icon.png in Resources */,
-				568AD20C17869876004A6257 /* Icon@2x.png in Resources */,
 				561CDFEA17880CA2009ECCFA /* m_lydian.pd in Resources */,
 				561CDFEB17880CA2009ECCFA /* m_lydiansharp5.pd in Resources */,
 				561CDFF317880CAB009ECCFA /* metatone_sounds_ver2.pd in Resources */,
@@ -2257,11 +2221,12 @@
 		565602161711957D00E819A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Metatone/Metatone Lonsdale-Prefix.pch";
 				INFOPLIST_FILE = "Metatone/Metatone Lonsdale-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "-licucore";
 				PRODUCT_NAME = "Metatone Lonsdale";
 				USER_HEADER_SEARCH_PATHS = "../pd-for-ios/libpd/** ../CocoaOSC/**";
@@ -2272,12 +2237,13 @@
 		565602171711957D00E819A3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Metatone/Metatone Lonsdale-Prefix.pch";
 				INFOPLIST_FILE = "Metatone/Metatone Lonsdale-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-licucore";
 				PRODUCT_NAME = "Metatone Lonsdale";
