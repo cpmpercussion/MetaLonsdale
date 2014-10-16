@@ -12,6 +12,7 @@
 #import "PdBase.h"
 #import "LoopingNote.h"
 #import "MetatoneNetworkManager.h"
+#import "MetatoneMidiManager.h"
 
 
 @interface MetatoneViewController : UIViewController <PdReceiverDelegate, LoopingNoteDelegate,MetatoneNetworkManagerDelegate>
@@ -20,6 +21,8 @@
 
 @property (strong, nonatomic) NSString* lastGesture;
 @property (nonatomic) int sameGestureCount;
+
+@property (strong, nonatomic) MetatoneMidiManager* midiManager;
 
 - (void)setupOscLogging;
 - (void)stopOscLogging;

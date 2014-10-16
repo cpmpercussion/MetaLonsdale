@@ -59,6 +59,11 @@
 		565602071711957D00E819A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 565601DF1711957D00E819A3 /* Foundation.framework */; };
 		5659731B17AC9FF100D4158A /* gong78.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5659731A17AC9FF100D4158A /* gong78.wav */; };
 		566FCB63171680CB00E4E83B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 566FCB62171680CB00E4E83B /* CoreMotion.framework */; };
+		5673A95919EF523300B0ACDF /* MetatoneMidiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5673A95119EF523300B0ACDF /* MetatoneMidiManager.m */; };
+		5673A95A19EF523300B0ACDF /* PGMidi.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5673A95419EF523300B0ACDF /* PGMidi.mm */; };
+		5673A95B19EF523300B0ACDF /* PGMidiAllSources.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5673A95619EF523300B0ACDF /* PGMidiAllSources.mm */; };
+		5673A95C19EF523300B0ACDF /* PGMidiFind.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5673A95819EF523300B0ACDF /* PGMidiFind.mm */; };
+		5673A95E19EF526C00B0ACDF /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5673A95D19EF526C00B0ACDF /* CoreMIDI.framework */; };
 		568AD1F31786975A004A6257 /* crotale-C.wav in Resources */ = {isa = PBXBuildFile; fileRef = 568AD1F11786975A004A6257 /* crotale-C.wav */; };
 		568AD1F41786975A004A6257 /* marimba-60.wav in Resources */ = {isa = PBXBuildFile; fileRef = 568AD1F21786975A004A6257 /* marimba-60.wav */; };
 		568AD1F817869768004A6257 /* bassdrumscratch.wav in Resources */ = {isa = PBXBuildFile; fileRef = 568AD1F517869768004A6257 /* bassdrumscratch.wav */; };
@@ -549,6 +554,17 @@
 		565602041711957D00E819A3 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		5659731A17AC9FF100D4158A /* gong78.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = gong78.wav; sourceTree = "<group>"; };
 		566FCB62171680CB00E4E83B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		5673A94F19EF523300B0ACDF /* iOSVersionDetection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSVersionDetection.h; sourceTree = "<group>"; };
+		5673A95019EF523300B0ACDF /* MetatoneMidiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetatoneMidiManager.h; sourceTree = "<group>"; };
+		5673A95119EF523300B0ACDF /* MetatoneMidiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MetatoneMidiManager.m; sourceTree = "<group>"; };
+		5673A95219EF523300B0ACDF /* PGArc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGArc.h; sourceTree = "<group>"; };
+		5673A95319EF523300B0ACDF /* PGMidi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMidi.h; sourceTree = "<group>"; };
+		5673A95419EF523300B0ACDF /* PGMidi.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PGMidi.mm; sourceTree = "<group>"; };
+		5673A95519EF523300B0ACDF /* PGMidiAllSources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMidiAllSources.h; sourceTree = "<group>"; };
+		5673A95619EF523300B0ACDF /* PGMidiAllSources.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PGMidiAllSources.mm; sourceTree = "<group>"; };
+		5673A95719EF523300B0ACDF /* PGMidiFind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMidiFind.h; sourceTree = "<group>"; };
+		5673A95819EF523300B0ACDF /* PGMidiFind.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PGMidiFind.mm; sourceTree = "<group>"; };
+		5673A95D19EF526C00B0ACDF /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
 		568AD1F11786975A004A6257 /* crotale-C.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "crotale-C.wav"; sourceTree = "<group>"; };
 		568AD1F21786975A004A6257 /* marimba-60.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "marimba-60.wav"; sourceTree = "<group>"; };
 		568AD1F517869768004A6257 /* bassdrumscratch.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bassdrumscratch.wav; sourceTree = "<group>"; };
@@ -946,6 +962,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5673A95E19EF526C00B0ACDF /* CoreMIDI.framework in Frameworks */,
 				5639BB6718D1534E00CD6759 /* CFNetwork.framework in Frameworks */,
 				5639BB6618D1533400CD6759 /* Security.framework in Frameworks */,
 				56D9F2F8171E79A200B28B75 /* QuartzCore.framework in Frameworks */,
@@ -1045,6 +1062,7 @@
 		565601D11711957D00E819A3 = {
 			isa = PBXGroup;
 			children = (
+				5673A94E19EF523300B0ACDF /* PGMidi */,
 				5639BB2F18D150F200CD6759 /* MetatoneOSC */,
 				565601E31711957D00E819A3 /* Metatone */,
 				565601DC1711957D00E819A3 /* Frameworks */,
@@ -1065,6 +1083,7 @@
 		565601DC1711957D00E819A3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5673A95D19EF526C00B0ACDF /* CoreMIDI.framework */,
 				5639BB6518D1533400CD6759 /* Security.framework */,
 				56D9F2F7171E79A200B28B75 /* QuartzCore.framework */,
 				566FCB62171680CB00E4E83B /* CoreMotion.framework */,
@@ -1114,6 +1133,23 @@
 				565601F31711957D00E819A3 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5673A94E19EF523300B0ACDF /* PGMidi */ = {
+			isa = PBXGroup;
+			children = (
+				5673A94F19EF523300B0ACDF /* iOSVersionDetection.h */,
+				5673A95019EF523300B0ACDF /* MetatoneMidiManager.h */,
+				5673A95119EF523300B0ACDF /* MetatoneMidiManager.m */,
+				5673A95219EF523300B0ACDF /* PGArc.h */,
+				5673A95319EF523300B0ACDF /* PGMidi.h */,
+				5673A95419EF523300B0ACDF /* PGMidi.mm */,
+				5673A95519EF523300B0ACDF /* PGMidiAllSources.h */,
+				5673A95619EF523300B0ACDF /* PGMidiAllSources.mm */,
+				5673A95719EF523300B0ACDF /* PGMidiFind.h */,
+				5673A95819EF523300B0ACDF /* PGMidiFind.mm */,
+			);
+			path = PGMidi;
 			sourceTree = "<group>";
 		};
 		56BD3CC51712FA39004FBB65 /* metatone-instrument */ = {
@@ -1578,7 +1614,7 @@
 			name = "Metatone LonsdaleTests";
 			productName = MetatoneTests;
 			productReference = 565602031711957D00E819A3 /* Metatone LonsdaleTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -1587,9 +1623,14 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = Metatone;
-				LastTestingUpgradeCheck = 0510;
+				LastTestingUpgradeCheck = 0600;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Charles Martin";
+				TargetAttributes = {
+					565601D91711957D00E819A3 = {
+						DevelopmentTeam = EDH387FRHA;
+					};
+				};
 			};
 			buildConfigurationList = 565601D51711957D00E819A3 /* Build configuration list for PBXProject "Metatone Lonsdale" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -2078,6 +2119,8 @@
 				5639BB5B18D150F200CD6759 /* GCDAsyncSocket.m in Sources */,
 				5639BB5518D150F200CD6759 /* F53OSCMessage.m in Sources */,
 				5639BB5718D150F200CD6759 /* F53OSCParser.m in Sources */,
+				5673A95919EF523300B0ACDF /* MetatoneMidiManager.m in Sources */,
+				5673A95C19EF523300B0ACDF /* PGMidiFind.mm in Sources */,
 				565601EA1711957D00E819A3 /* main.m in Sources */,
 				5639BB5A18D150F200CD6759 /* F53OSCTimeTag.m in Sources */,
 				5639BB6218D150F200CD6759 /* NSString+F53OSCString.m in Sources */,
@@ -2085,6 +2128,7 @@
 				5639BB5C18D150F200CD6759 /* GCDAsyncUdpSocket.m in Sources */,
 				5639BB5F18D150F200CD6759 /* NSData+F53OSCBlob.m in Sources */,
 				5639BB5918D150F200CD6759 /* F53OSCSocket.m in Sources */,
+				5673A95B19EF523300B0ACDF /* PGMidiAllSources.mm in Sources */,
 				565601EE1711957D00E819A3 /* MetatoneAppDelegate.m in Sources */,
 				565601FD1711957D00E819A3 /* MetatoneViewController.m in Sources */,
 				5639BB5418D150F200CD6759 /* F53OSCClient.m in Sources */,
@@ -2093,6 +2137,7 @@
 				5639BB6018D150F200CD6759 /* NSDate+F53OSCTimeTag.m in Sources */,
 				56D9F2F6171E592600B28B75 /* MetatoneTouchView.m in Sources */,
 				561CE01417881BF6009ECCFA /* arraysize.c in Sources */,
+				5673A95A19EF523300B0ACDF /* PGMidi.mm in Sources */,
 				5639BB5318D150F200CD6759 /* F53OSCBundle.m in Sources */,
 				5639BB5618D150F200CD6759 /* F53OSCPacket.m in Sources */,
 				561CE01717882267009ECCFA /* ScaleMaker.m in Sources */,
@@ -2212,6 +2257,7 @@
 		565602161711957D00E819A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Metatone/Metatone Lonsdale-Prefix.pch";
 				INFOPLIST_FILE = "Metatone/Metatone Lonsdale-Info.plist";

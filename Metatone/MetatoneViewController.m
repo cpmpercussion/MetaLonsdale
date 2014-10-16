@@ -71,11 +71,7 @@
 -(void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    
-    // Randomise Sounds each time the app is back in focus
     [PdBase sendBangToReceiver:@"randomiseSounds"];
-    // Setup Networking
-    //[[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 void arraysize_setup();
@@ -100,6 +96,9 @@ void arraysize_setup();
     [self.audioController print];
     [PdBase setDelegate:self];
     [PdBase sendBangToReceiver:@"randomiseSounds"];
+    
+    // Setup Midi
+    self.midiManager = [[MetatoneMidiManager alloc] init];
     
     // Setup Logging
     if ([[NSUserDefaults standardUserDefaults] boolForKey:@"OSCLogging"]) {
@@ -137,9 +136,7 @@ void arraysize_setup();
     self.tapMode = 0;
     self.scaleMode = 0;
     [self.scaleLabel setText:@"F Mixo"];
-    
     self.sameGestureCount = 0;
-    
     [self changeBackgroundImage];
     self.timeOfLastNewIdea = [NSDate date];
 }
@@ -374,7 +371,7 @@ void arraysize_setup();
     if (self.oscLogging) {
         // stop the spinner - write "Logging Server Not Found" in the field.
         [self.oscLoggingSpinner stopAnimating];
-        [self.oscLoggingLabel setText: @"Logging Server Not Found!"];
+        [self.oscLoggingLabel setText: @"Logging Server Not Found! 😰"];
     }
 }
 
