@@ -28,10 +28,6 @@
 
 #define LOOPED_NOTE_LIMIT 200
 
-@interface UITouch (Private)
--(float)_pathMajorRadius;
-@end
-
 @interface MetatoneViewController () {
     NSOperationQueue *queue;
 }
@@ -100,36 +96,8 @@ void arraysize_setup();
     // Setup Midi
     self.midiManager = [[MetatoneMidiManager alloc] init];
     
-    // Setup Logging
-    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"OSCLogging"]) {
-        self.oscLogging = YES;
-        NSLog(@"Setup Logging.");
-        if ([[NSUserDefaults standardUserDefaults] boolForKey:@"AccelerationLogging"]) {
-            self.accelLogging = YES;
-        }
-    } else {
-        [self.oscLoggingLabel setText:@""];
-        self.oscLogging = NO;
-        NSLog(@"No OSC Logging.");
-    }
+    self.oscLogging = YES;
     [self setupOscLogging];
-    
-    
-    // Setup Accelerometer
-    self.motionManager = [[CMMotionManager alloc] init];
-    [self.motionManager startDeviceMotionUpdates];
-    
-    if (self.accelLogging) {
-        self.motionManager.accelerometerUpdateInterval = 1.0/100.0;
-        if (self.motionManager.accelerometerAvailable) {
-            NSLog(@"Accelerometer Available.");
-            queue = [NSOperationQueue currentQueue];
-            [self.motionManager startAccelerometerUpdatesToQueue:queue withHandler:^(CMAccelerometerData *accelerometerData, NSError *error) {
-                CMAcceleration acceleration = accelerometerData.acceleration;
-                if (self.oscLogging) [self.networkManager sendMessageWithAccelerationX:acceleration.x Y:acceleration.y Z:acceleration.z];
-            }];
-        }
-    }
     
     // Looping Test
     self.tapLooping = YES;
@@ -137,23 +105,21 @@ void arraysize_setup();
     self.scaleMode = 0;
     [self.scaleLabel setText:@"F Mixo"];
     self.sameGestureCount = 0;
-    [self changeBackgroundImage];
+    [self.backgroundImage setImage:[UIImage imageNamed:@"LonsdaleTradersWood.jpg"]];
     self.timeOfLastNewIdea = [NSDate date];
 }
 
 -(void)changeBackgroundImage {
     // Setup background image
-    int choice = arc4random_uniform(5);
+    int choice = arc4random_uniform(4);
     if (choice == 0) {
-        [self.backgroundImage setImage:[UIImage imageNamed:@"canvas.jpg"]];
+        [self.backgroundImage setImage:[UIImage imageNamed:@"LonsdaleTradersWall.jpg"]];
     } else if (choice == 1) {
         [self.backgroundImage setImage:[UIImage imageNamed:@"LonsdaleTradersFloor.jpg"]];
     } else if (choice == 2) {
         [self.backgroundImage setImage:[UIImage imageNamed:@"LonsdaleTradersWood.jpg"]];
     } else if (choice == 3) {
         [self.backgroundImage setImage:[UIImage imageNamed:@"LonsdaleTradersGrill.jpg"]];
-    } else if (choice == 4) {
-        [self.backgroundImage setImage:[UIImage imageNamed:@"LonsdaleTradersWall.jpg"]];
     }
 }
 
@@ -203,11 +169,9 @@ void arraysize_setup();
 {
     UITouch *touch = [touches anyObject];
     CGPoint touchPoint = [touch locationInView:self.view];
-//    CGFloat distance = [self calculateDistanceFromCenter:touchPoint] /600;
     
-    // Velocity.
-    float radius = (touch._pathMajorRadius - 5.0)/16;
-    int velocity = floorf(15 + (radius * 115));
+    // Velocity
+    int velocity = floorf(15 + (110*((touch.majorRadius)/80)));
     if (velocity > 127) velocity = 127;
     if (velocity < 0) velocity = 0;
     
@@ -215,7 +179,7 @@ void arraysize_setup();
     if (self.tapMode == TAP_MODE_FIELDS || self.tapMode == TAP_MODE_FIELDS) {
         [PdBase sendBangToReceiver:@"touch" ]; // makes a small sound
 //        [PdBase sendFloat:distance toReceiver:@"tapdistance" ];
-        [PdBase sendFloat:velocity/100.0 toReceiver:@"tapdistance"];
+        [PdBase sendFloat:velocity/127.0 toReceiver:@"tapdistance"];
     }
     
     // Send to Pd as a midi note.
@@ -300,7 +264,10 @@ void arraysize_setup();
     [self.networkManager sendMetatoneMessage:METATONE_TAPMODE_MESSAGE
                                    withState:[NSString stringWithFormat:@"%d",self.tapMode]];
     
-    if (arc4random_uniform(100)>75) [self randomiseScale];
+    if (arc4random_uniform(100)>75) {
+        [self randomiseScale];
+        [self changeBackgroundImage];
+    }
 }
 
 // Scale Method
@@ -356,8 +323,10 @@ void arraysize_setup();
 - (void) searchingForLoggingServer {
     if (self.oscLogging) {
         // Spin the spinner - write "Searching for Logging Server" in the field
-        [self.oscLoggingSpinner startAnimating];
-        [self.oscLoggingLabel setText:@"searching for server 😒"];
+//        [self.oscLoggingSpinner startAnimating];
+//        [self.oscLoggingLabel setText:@"searching for server 😒"];
+        [self.oscLoggingSpinner setHidden:YES];
+        [self.oscLoggingLabel setText:@""];
     }
 }
 

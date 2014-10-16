@@ -23,7 +23,6 @@
 		561CE01B1788387E009ECCFA /* LonsdaleTradersWood.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 561CE01A1788387E009ECCFA /* LonsdaleTradersWood.jpg */; };
 		561CE01D17883885009ECCFA /* LonsdaleTradersGrill.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 561CE01C17883885009ECCFA /* LonsdaleTradersGrill.jpg */; };
 		561CE01F1788388B009ECCFA /* LonsdaleTradersWall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 561CE01E1788388B009ECCFA /* LonsdaleTradersWall.jpg */; };
-		562C1997171513D800C698FF /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 562C1996171513D800C698FF /* Settings.bundle */; };
 		5639BB5318D150F200CD6759 /* F53OSCBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 5639BB3218D150F200CD6759 /* F53OSCBundle.m */; };
 		5639BB5418D150F200CD6759 /* F53OSCClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 5639BB3418D150F200CD6759 /* F53OSCClient.m */; };
 		5639BB5518D150F200CD6759 /* F53OSCMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5639BB3718D150F200CD6759 /* F53OSCMessage.m */; };
@@ -66,7 +65,6 @@
 		568AD1F41786975A004A6257 /* marimba-60.wav in Resources */ = {isa = PBXBuildFile; fileRef = 568AD1F21786975A004A6257 /* marimba-60.wav */; };
 		568AD1F817869768004A6257 /* bassdrumscratch.wav in Resources */ = {isa = PBXBuildFile; fileRef = 568AD1F517869768004A6257 /* bassdrumscratch.wav */; };
 		568AD1FA17869768004A6257 /* congascratch.wav in Resources */ = {isa = PBXBuildFile; fileRef = 568AD1F717869768004A6257 /* congascratch.wav */; };
-		568AD1FC17869810004A6257 /* canvas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 568AD1FB17869810004A6257 /* canvas.jpg */; };
 		56A0D8DA19EF5B2900CEF76C /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56A0D8D919EF5B2900CEF76C /* Launch Screen.xib */; };
 		56BD3E3D1712FA3A004FBB65 /* bellsynth.pd in Resources */ = {isa = PBXBuildFile; fileRef = 56BD3CC61712FA39004FBB65 /* bellsynth.pd */; };
 		56BD3E3E1712FA3A004FBB65 /* bowlsynth.pd in Resources */ = {isa = PBXBuildFile; fileRef = 56BD3CC71712FA39004FBB65 /* bowlsynth.pd */; };
@@ -487,7 +485,6 @@
 		561CE01A1788387E009ECCFA /* LonsdaleTradersWood.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LonsdaleTradersWood.jpg; sourceTree = "<group>"; };
 		561CE01C17883885009ECCFA /* LonsdaleTradersGrill.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LonsdaleTradersGrill.jpg; sourceTree = "<group>"; };
 		561CE01E1788388B009ECCFA /* LonsdaleTradersWall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LonsdaleTradersWall.jpg; sourceTree = "<group>"; };
-		562C1996171513D800C698FF /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		562C19C217159DD400C698FF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		5639BB3018D150F200CD6759 /* F53OSC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSC.h; sourceTree = "<group>"; };
 		5639BB3118D150F200CD6759 /* F53OSCBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCBundle.h; sourceTree = "<group>"; };
@@ -558,7 +555,6 @@
 		568AD1F21786975A004A6257 /* marimba-60.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "marimba-60.wav"; sourceTree = "<group>"; };
 		568AD1F517869768004A6257 /* bassdrumscratch.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bassdrumscratch.wav; sourceTree = "<group>"; };
 		568AD1F717869768004A6257 /* congascratch.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = congascratch.wav; sourceTree = "<group>"; };
-		568AD1FB17869810004A6257 /* canvas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = canvas.jpg; sourceTree = "<group>"; };
 		56A0D8D919EF5B2900CEF76C /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
 		56BD3CC61712FA39004FBB65 /* bellsynth.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bellsynth.pd; sourceTree = "<group>"; };
 		56BD3CC71712FA39004FBB65 /* bowlsynth.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bowlsynth.pd; sourceTree = "<group>"; };
@@ -982,7 +978,6 @@
 		562C1985171508A600C698FF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				568AD1FB17869810004A6257 /* canvas.jpg */,
 				561CE01817883878009ECCFA /* LonsdaleTradersFloor.jpg */,
 				561CE01A1788387E009ECCFA /* LonsdaleTradersWood.jpg */,
 				561CE01C17883885009ECCFA /* LonsdaleTradersGrill.jpg */,
@@ -1077,7 +1072,6 @@
 		565601E31711957D00E819A3 /* Metatone */ = {
 			isa = PBXGroup;
 			children = (
-				562C1996171513D800C698FF /* Settings.bundle */,
 				56BD3CC51712FA39004FBB65 /* metatone-instrument */,
 				565601EC1711957D00E819A3 /* MetatoneAppDelegate.h */,
 				565601ED1711957D00E819A3 /* MetatoneAppDelegate.m */,
@@ -2026,13 +2020,11 @@
 				56BD3FAE1712FA3A004FBB65 /* u_wrandom.pd in Resources */,
 				56BD3FAF1712FA3A004FBB65 /* z_blank-help.pd in Resources */,
 				56BD3FB01712FA3A004FBB65 /* volumeRandomise.pd in Resources */,
-				562C1997171513D800C698FF /* Settings.bundle in Resources */,
 				560BADDF1721787400859880 /* s_looper_open.pd in Resources */,
 				568AD1F31786975A004A6257 /* crotale-C.wav in Resources */,
 				568AD1F41786975A004A6257 /* marimba-60.wav in Resources */,
 				568AD1F817869768004A6257 /* bassdrumscratch.wav in Resources */,
 				568AD1FA17869768004A6257 /* congascratch.wav in Resources */,
-				568AD1FC17869810004A6257 /* canvas.jpg in Resources */,
 				561CDFEA17880CA2009ECCFA /* m_lydian.pd in Resources */,
 				561CDFEB17880CA2009ECCFA /* m_lydiansharp5.pd in Resources */,
 				561CDFF317880CAB009ECCFA /* metatone_sounds_ver2.pd in Resources */,
