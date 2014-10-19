@@ -107,6 +107,7 @@ void arraysize_setup();
     self.sameGestureCount = 0;
     [self.backgroundImage setImage:[UIImage imageNamed:@"LonsdaleTradersWood.jpg"]];
     self.timeOfLastNewIdea = [NSDate date];
+    [self.oscLoggingLabel setHidden:YES];
 }
 
 -(void)changeBackgroundImage {
@@ -276,7 +277,7 @@ void arraysize_setup();
     self.scaleMode = (self.scaleMode + 1) % 3;
     // update scale label
     if (self.scaleMode == SCALE_MODE_F_MIXO) [self.scaleLabel setText:@"F Mixo"];
-    if (self.scaleMode == SCALE_MODE_C_LYDSHARP) [self.scaleLabel setText:@"C Lyd Sharp 5"];
+    if (self.scaleMode == SCALE_MODE_C_LYDSHARP) [self.scaleLabel setText:@"C Lyd #5"];
     if (self.scaleMode == SCALE_MODE_FSHARP_LYD) [self.scaleLabel setText:@"F# Lydian"];
     
     [self.networkManager sendMetatoneMessage:METATONE_SCALE_MESSAGE withState:[NSString stringWithFormat:@"%d", self.scaleMode]];
@@ -309,6 +310,7 @@ void arraysize_setup();
     
     if (!self.networkManager) {
         self.oscLogging = NO;
+        [self.oscLoggingLabel setHidden:YES];
         [self.oscLoggingLabel setText:@"OSC Logging: Not Connected. 😓"];
         NSLog(@"OSC Logging: Not Connected");
     }
@@ -326,6 +328,7 @@ void arraysize_setup();
 //        [self.oscLoggingSpinner startAnimating];
 //        [self.oscLoggingLabel setText:@"searching for server 😒"];
         [self.oscLoggingSpinner setHidden:YES];
+        [self.oscLoggingLabel setHidden:YES];
         [self.oscLoggingLabel setText:@""];
     }
 }
@@ -334,6 +337,7 @@ void arraysize_setup();
     // Stop the spinner - update info in the field
     [self.oscLoggingSpinner stopAnimating];
     [self.oscLoggingLabel setText:[NSString stringWithFormat:@"connected to %@ 👍", hostname]];
+    [self.oscLoggingLabel setHidden:NO];
 }
 
 -(void) stoppedSearchingForLoggingServer {
@@ -341,6 +345,7 @@ void arraysize_setup();
         // stop the spinner - write "Logging Server Not Found" in the field.
         [self.oscLoggingSpinner stopAnimating];
         [self.oscLoggingLabel setText: @"Logging Server Not Found! 😰"];
+        [self.oscLoggingLabel setHidden:YES];
     }
 }
 
