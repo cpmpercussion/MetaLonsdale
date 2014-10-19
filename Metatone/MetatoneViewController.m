@@ -409,6 +409,9 @@ void arraysize_setup();
 
 }
 
+-(void) metatoneClientFoundWithAddress:(NSString *)address andPort:(int)port andHostname:(NSString *)hostname {}
+-(void) metatoneClientRemovedwithAddress:(NSString *)address andPort:(int)port andHostname:(NSString *)hostname {}
+
 - (BOOL)prefersStatusBarHidden
 {
     return YES;

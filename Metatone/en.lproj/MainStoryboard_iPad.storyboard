@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <deployment defaultVersion="1792" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
         <!--Metatone View Controller-->
@@ -17,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="canvas.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="qj2-vR-65x">
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="LonsdaleTradersWood.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="qj2-vR-65x">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <gestureRecognizers/>
                                 <connections>
@@ -126,7 +125,6 @@
                             <constraint firstItem="qj2-vR-65x" firstAttribute="leading" secondItem="5" secondAttribute="leading" id="ua2-sU-6Jo"/>
                             <constraint firstItem="1ZF-I0-Rwa" firstAttribute="bottom" secondItem="xqQ-6o-RUs" secondAttribute="bottom" id="ylR-fB-wov"/>
                         </constraints>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
@@ -150,7 +148,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="canvas.jpg" width="3264" height="2448"/>
+        <image name="LonsdaleTradersWood.jpg" width="1632" height="1224"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
