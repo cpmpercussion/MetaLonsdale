@@ -25,6 +25,12 @@
 		561CE01F1788388B009ECCFA /* LonsdaleTradersWall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 561CE01E1788388B009ECCFA /* LonsdaleTradersWall.jpg */; };
 		5639BB6618D1533400CD6759 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5639BB6518D1533400CD6759 /* Security.framework */; };
 		5639BB6718D1534E00CD6759 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 562C19C217159DD400C698FF /* CFNetwork.framework */; };
+		563B1D3719F3CA4700313D5E /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 563B1D2B19F3CA4700313D5E /* .gitignore */; };
+		563B1D3819F3CA4700313D5E /* MetatoneMidiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 563B1D2E19F3CA4700313D5E /* MetatoneMidiManager.m */; };
+		563B1D3919F3CA4700313D5E /* PGMidi.mm in Sources */ = {isa = PBXBuildFile; fileRef = 563B1D3119F3CA4700313D5E /* PGMidi.mm */; };
+		563B1D3A19F3CA4700313D5E /* PGMidiAllSources.mm in Sources */ = {isa = PBXBuildFile; fileRef = 563B1D3319F3CA4700313D5E /* PGMidiAllSources.mm */; };
+		563B1D3B19F3CA4700313D5E /* PGMidiFind.mm in Sources */ = {isa = PBXBuildFile; fileRef = 563B1D3519F3CA4700313D5E /* PGMidiFind.mm */; };
+		563B1D3C19F3CA4700313D5E /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 563B1D3619F3CA4700313D5E /* README.md */; };
 		565601DE1711957D00E819A3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 565601DD1711957D00E819A3 /* UIKit.framework */; };
 		565601E01711957D00E819A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 565601DF1711957D00E819A3 /* Foundation.framework */; };
 		565601E21711957D00E819A3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 565601E11711957D00E819A3 /* CoreGraphics.framework */; };
@@ -38,10 +44,6 @@
 		565602061711957D00E819A3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 565601DD1711957D00E819A3 /* UIKit.framework */; };
 		565602071711957D00E819A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 565601DF1711957D00E819A3 /* Foundation.framework */; };
 		5659731B17AC9FF100D4158A /* gong78.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5659731A17AC9FF100D4158A /* gong78.wav */; };
-		5673A95919EF523300B0ACDF /* MetatoneMidiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5673A95119EF523300B0ACDF /* MetatoneMidiManager.m */; };
-		5673A95A19EF523300B0ACDF /* PGMidi.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5673A95419EF523300B0ACDF /* PGMidi.mm */; };
-		5673A95B19EF523300B0ACDF /* PGMidiAllSources.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5673A95619EF523300B0ACDF /* PGMidiAllSources.mm */; };
-		5673A95C19EF523300B0ACDF /* PGMidiFind.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5673A95819EF523300B0ACDF /* PGMidiFind.mm */; };
 		5673A95E19EF526C00B0ACDF /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5673A95D19EF526C00B0ACDF /* CoreMIDI.framework */; };
 		5673A96019EF552700B0ACDF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5673A95F19EF552700B0ACDF /* Images.xcassets */; };
 		5674769C19F0E34900AACCBA /* F53OSCBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 5674767B19F0E34900AACCBA /* F53OSCBundle.m */; };
@@ -484,6 +486,18 @@
 		561CE01E1788388B009ECCFA /* LonsdaleTradersWall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LonsdaleTradersWall.jpg; sourceTree = "<group>"; };
 		562C19C217159DD400C698FF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		5639BB6518D1533400CD6759 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		563B1D2B19F3CA4700313D5E /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		563B1D2C19F3CA4700313D5E /* iOSVersionDetection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSVersionDetection.h; sourceTree = "<group>"; };
+		563B1D2D19F3CA4700313D5E /* MetatoneMidiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetatoneMidiManager.h; sourceTree = "<group>"; };
+		563B1D2E19F3CA4700313D5E /* MetatoneMidiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MetatoneMidiManager.m; sourceTree = "<group>"; };
+		563B1D2F19F3CA4700313D5E /* PGArc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGArc.h; sourceTree = "<group>"; };
+		563B1D3019F3CA4700313D5E /* PGMidi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMidi.h; sourceTree = "<group>"; };
+		563B1D3119F3CA4700313D5E /* PGMidi.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PGMidi.mm; sourceTree = "<group>"; };
+		563B1D3219F3CA4700313D5E /* PGMidiAllSources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMidiAllSources.h; sourceTree = "<group>"; };
+		563B1D3319F3CA4700313D5E /* PGMidiAllSources.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PGMidiAllSources.mm; sourceTree = "<group>"; };
+		563B1D3419F3CA4700313D5E /* PGMidiFind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMidiFind.h; sourceTree = "<group>"; };
+		563B1D3519F3CA4700313D5E /* PGMidiFind.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PGMidiFind.mm; sourceTree = "<group>"; };
+		563B1D3619F3CA4700313D5E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		565601DA1711957D00E819A3 /* MetaLonsdale.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetaLonsdale.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		565601DD1711957D00E819A3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		565601DF1711957D00E819A3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -501,16 +515,6 @@
 		565602031711957D00E819A3 /* MetaLonsdaleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetaLonsdaleTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		565602041711957D00E819A3 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		5659731A17AC9FF100D4158A /* gong78.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = gong78.wav; sourceTree = "<group>"; };
-		5673A94F19EF523300B0ACDF /* iOSVersionDetection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSVersionDetection.h; sourceTree = "<group>"; };
-		5673A95019EF523300B0ACDF /* MetatoneMidiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetatoneMidiManager.h; sourceTree = "<group>"; };
-		5673A95119EF523300B0ACDF /* MetatoneMidiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MetatoneMidiManager.m; sourceTree = "<group>"; };
-		5673A95219EF523300B0ACDF /* PGArc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGArc.h; sourceTree = "<group>"; };
-		5673A95319EF523300B0ACDF /* PGMidi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMidi.h; sourceTree = "<group>"; };
-		5673A95419EF523300B0ACDF /* PGMidi.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PGMidi.mm; sourceTree = "<group>"; };
-		5673A95519EF523300B0ACDF /* PGMidiAllSources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMidiAllSources.h; sourceTree = "<group>"; };
-		5673A95619EF523300B0ACDF /* PGMidiAllSources.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PGMidiAllSources.mm; sourceTree = "<group>"; };
-		5673A95719EF523300B0ACDF /* PGMidiFind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMidiFind.h; sourceTree = "<group>"; };
-		5673A95819EF523300B0ACDF /* PGMidiFind.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PGMidiFind.mm; sourceTree = "<group>"; };
 		5673A95D19EF526C00B0ACDF /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
 		5673A95F19EF552700B0ACDF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "Metatone Lonsdale/Images.xcassets"; sourceTree = "<group>"; };
 		5674767919F0E34900AACCBA /* F53OSC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSC.h; sourceTree = "<group>"; };
@@ -982,13 +986,32 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		563B1D2A19F3CA4700313D5E /* MetatoneMIDI */ = {
+			isa = PBXGroup;
+			children = (
+				563B1D2B19F3CA4700313D5E /* .gitignore */,
+				563B1D2C19F3CA4700313D5E /* iOSVersionDetection.h */,
+				563B1D2D19F3CA4700313D5E /* MetatoneMidiManager.h */,
+				563B1D2E19F3CA4700313D5E /* MetatoneMidiManager.m */,
+				563B1D2F19F3CA4700313D5E /* PGArc.h */,
+				563B1D3019F3CA4700313D5E /* PGMidi.h */,
+				563B1D3119F3CA4700313D5E /* PGMidi.mm */,
+				563B1D3219F3CA4700313D5E /* PGMidiAllSources.h */,
+				563B1D3319F3CA4700313D5E /* PGMidiAllSources.mm */,
+				563B1D3419F3CA4700313D5E /* PGMidiFind.h */,
+				563B1D3519F3CA4700313D5E /* PGMidiFind.mm */,
+				563B1D3619F3CA4700313D5E /* README.md */,
+			);
+			path = MetatoneMIDI;
+			sourceTree = "<group>";
+		};
 		565601D11711957D00E819A3 = {
 			isa = PBXGroup;
 			children = (
+				563B1D2A19F3CA4700313D5E /* MetatoneMIDI */,
 				5674767819F0E34900AACCBA /* MetatoneOSC */,
 				56A0D8D919EF5B2900CEF76C /* Launch Screen.xib */,
 				5673A95F19EF552700B0ACDF /* Images.xcassets */,
-				5673A94E19EF523300B0ACDF /* PGMidi */,
 				565601E31711957D00E819A3 /* Metatone */,
 				565601DC1711957D00E819A3 /* Frameworks */,
 				565601DB1711957D00E819A3 /* Products */,
@@ -1053,23 +1076,6 @@
 				565601EB1711957D00E819A3 /* MetaLonsdale-Prefix.pch */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		5673A94E19EF523300B0ACDF /* PGMidi */ = {
-			isa = PBXGroup;
-			children = (
-				5673A94F19EF523300B0ACDF /* iOSVersionDetection.h */,
-				5673A95019EF523300B0ACDF /* MetatoneMidiManager.h */,
-				5673A95119EF523300B0ACDF /* MetatoneMidiManager.m */,
-				5673A95219EF523300B0ACDF /* PGArc.h */,
-				5673A95319EF523300B0ACDF /* PGMidi.h */,
-				5673A95419EF523300B0ACDF /* PGMidi.mm */,
-				5673A95519EF523300B0ACDF /* PGMidiAllSources.h */,
-				5673A95619EF523300B0ACDF /* PGMidiAllSources.mm */,
-				5673A95719EF523300B0ACDF /* PGMidiFind.h */,
-				5673A95819EF523300B0ACDF /* PGMidiFind.mm */,
-			);
-			path = PGMidi;
 			sourceTree = "<group>";
 		};
 		5674767819F0E34900AACCBA /* MetatoneOSC */ = {
@@ -1728,6 +1734,7 @@
 				56BD3E921712FA3A004FBB65 /* e_dubdel-help.pd in Resources */,
 				56BD3E931712FA3A004FBB65 /* e_dubdel.pd in Resources */,
 				56BD3E941712FA3A004FBB65 /* e_dynproc-help.pd in Resources */,
+				563B1D3719F3CA4700313D5E /* .gitignore in Resources */,
 				56BD3E951712FA3A004FBB65 /* e_dynproc.pd in Resources */,
 				56BD3E961712FA3A004FBB65 /* e_fbdelay-help.pd in Resources */,
 				56BD3E971712FA3A004FBB65 /* e_fbdelay.pd in Resources */,
@@ -2065,29 +2072,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5673A95919EF523300B0ACDF /* MetatoneMidiManager.m in Sources */,
-				5673A95C19EF523300B0ACDF /* PGMidiFind.mm in Sources */,
 				5674769E19F0E34A00AACCBA /* F53OSCMessage.m in Sources */,
 				5674769C19F0E34900AACCBA /* F53OSCBundle.m in Sources */,
 				567476A519F0E34A00AACCBA /* GCDAsyncUdpSocket.m in Sources */,
+				563B1D3819F3CA4700313D5E /* MetatoneMidiManager.m in Sources */,
+				563B1D3B19F3CA4700313D5E /* PGMidiFind.mm in Sources */,
 				567476A119F0E34A00AACCBA /* F53OSCServer.m in Sources */,
 				5674769F19F0E34A00AACCBA /* F53OSCPacket.m in Sources */,
 				565601EA1711957D00E819A3 /* main.m in Sources */,
 				567476A219F0E34A00AACCBA /* F53OSCSocket.m in Sources */,
-				5673A95B19EF523300B0ACDF /* PGMidiAllSources.mm in Sources */,
 				565601EE1711957D00E819A3 /* MetatoneAppDelegate.m in Sources */,
 				567476A819F0E34A00AACCBA /* NSData+F53OSCBlob.m in Sources */,
 				565601FD1711957D00E819A3 /* MetatoneViewController.m in Sources */,
+				563B1D3A19F3CA4700313D5E /* PGMidiAllSources.mm in Sources */,
 				567476A019F0E34A00AACCBA /* F53OSCParser.m in Sources */,
 				5674769D19F0E34A00AACCBA /* F53OSCClient.m in Sources */,
+				563B1D3C19F3CA4700313D5E /* README.md in Sources */,
 				56D9F2ED171E2EF100B28B75 /* LoopingNote.m in Sources */,
 				567476A319F0E34A00AACCBA /* F53OSCTimeTag.m in Sources */,
 				567476A919F0E34A00AACCBA /* NSDate+F53OSCTimeTag.m in Sources */,
 				56D9F2F6171E592600B28B75 /* MetatoneTouchView.m in Sources */,
 				567476AA19F0E34A00AACCBA /* NSNumber+F53OSCNumber.m in Sources */,
 				567476A419F0E34A00AACCBA /* GCDAsyncSocket.m in Sources */,
+				563B1D3919F3CA4700313D5E /* PGMidi.mm in Sources */,
 				561CE01417881BF6009ECCFA /* arraysize.c in Sources */,
-				5673A95A19EF523300B0ACDF /* PGMidi.mm in Sources */,
 				567476AB19F0E34A00AACCBA /* NSString+F53OSCString.m in Sources */,
 				561CE01717882267009ECCFA /* ScaleMaker.m in Sources */,
 				567476A719F0E34A00AACCBA /* MetatoneNetworkManager.m in Sources */,
