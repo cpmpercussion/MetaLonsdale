@@ -38,7 +38,6 @@
 		565602061711957D00E819A3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 565601DD1711957D00E819A3 /* UIKit.framework */; };
 		565602071711957D00E819A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 565601DF1711957D00E819A3 /* Foundation.framework */; };
 		5659731B17AC9FF100D4158A /* gong78.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5659731A17AC9FF100D4158A /* gong78.wav */; };
-		566FCB63171680CB00E4E83B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 566FCB62171680CB00E4E83B /* CoreMotion.framework */; };
 		5673A95919EF523300B0ACDF /* MetatoneMidiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5673A95119EF523300B0ACDF /* MetatoneMidiManager.m */; };
 		5673A95A19EF523300B0ACDF /* PGMidi.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5673A95419EF523300B0ACDF /* PGMidi.mm */; };
 		5673A95B19EF523300B0ACDF /* PGMidiAllSources.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5673A95619EF523300B0ACDF /* PGMidiAllSources.mm */; };
@@ -485,24 +484,23 @@
 		561CE01E1788388B009ECCFA /* LonsdaleTradersWall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LonsdaleTradersWall.jpg; sourceTree = "<group>"; };
 		562C19C217159DD400C698FF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		5639BB6518D1533400CD6759 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		565601DA1711957D00E819A3 /* Metatone Lonsdale.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Metatone Lonsdale.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		565601DA1711957D00E819A3 /* MetaLonsdale.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetaLonsdale.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		565601DD1711957D00E819A3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		565601DF1711957D00E819A3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		565601E11711957D00E819A3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		565601E51711957D00E819A3 /* Metatone Lonsdale-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Metatone Lonsdale-Info.plist"; sourceTree = "<group>"; };
+		565601E51711957D00E819A3 /* MetaLonsdale-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MetaLonsdale-Info.plist"; sourceTree = "<group>"; };
 		565601E71711957D00E819A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		565601E91711957D00E819A3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		565601EB1711957D00E819A3 /* Metatone Lonsdale-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Metatone Lonsdale-Prefix.pch"; sourceTree = "<group>"; };
+		565601EB1711957D00E819A3 /* MetaLonsdale-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MetaLonsdale-Prefix.pch"; sourceTree = "<group>"; };
 		565601EC1711957D00E819A3 /* MetatoneAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetatoneAppDelegate.h; sourceTree = "<group>"; };
 		565601ED1711957D00E819A3 /* MetatoneAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MetatoneAppDelegate.m; sourceTree = "<group>"; };
 		565601F61711957D00E819A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		565601F91711957D00E819A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		565601FB1711957D00E819A3 /* MetatoneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetatoneViewController.h; sourceTree = "<group>"; };
 		565601FC1711957D00E819A3 /* MetatoneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MetatoneViewController.m; sourceTree = "<group>"; };
-		565602031711957D00E819A3 /* Metatone LonsdaleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Metatone LonsdaleTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		565602031711957D00E819A3 /* MetaLonsdaleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetaLonsdaleTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		565602041711957D00E819A3 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		5659731A17AC9FF100D4158A /* gong78.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = gong78.wav; sourceTree = "<group>"; };
-		566FCB62171680CB00E4E83B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		5673A94F19EF523300B0ACDF /* iOSVersionDetection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSVersionDetection.h; sourceTree = "<group>"; };
 		5673A95019EF523300B0ACDF /* MetatoneMidiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetatoneMidiManager.h; sourceTree = "<group>"; };
 		5673A95119EF523300B0ACDF /* MetatoneMidiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MetatoneMidiManager.m; sourceTree = "<group>"; };
@@ -943,7 +941,6 @@
 				5639BB6718D1534E00CD6759 /* CFNetwork.framework in Frameworks */,
 				5639BB6618D1533400CD6759 /* Security.framework in Frameworks */,
 				56D9F2F8171E79A200B28B75 /* QuartzCore.framework in Frameworks */,
-				566FCB63171680CB00E4E83B /* CoreMotion.framework in Frameworks */,
 				56BD3FC01712FAAA004FBB65 /* AVFoundation.framework in Frameworks */,
 				56BD3FBE1712FAA3004FBB65 /* AudioToolbox.framework in Frameworks */,
 				56BD3FBA1712FA5E004FBB65 /* libpd-ios.a in Frameworks */,
@@ -1002,8 +999,8 @@
 		565601DB1711957D00E819A3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				565601DA1711957D00E819A3 /* Metatone Lonsdale.app */,
-				565602031711957D00E819A3 /* Metatone LonsdaleTests.octest */,
+				565601DA1711957D00E819A3 /* MetaLonsdale.app */,
+				565602031711957D00E819A3 /* MetaLonsdaleTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1014,7 +1011,6 @@
 				5673A95D19EF526C00B0ACDF /* CoreMIDI.framework */,
 				5639BB6518D1533400CD6759 /* Security.framework */,
 				56D9F2F7171E79A200B28B75 /* QuartzCore.framework */,
-				566FCB62171680CB00E4E83B /* CoreMotion.framework */,
 				562C19C217159DD400C698FF /* CFNetwork.framework */,
 				56BD3FBF1712FAAA004FBB65 /* AVFoundation.framework */,
 				56BD3FBD1712FAA3004FBB65 /* AudioToolbox.framework */,
@@ -1051,10 +1047,10 @@
 		565601E41711957D00E819A3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				565601E51711957D00E819A3 /* Metatone Lonsdale-Info.plist */,
+				565601E51711957D00E819A3 /* MetaLonsdale-Info.plist */,
 				565601E61711957D00E819A3 /* InfoPlist.strings */,
 				565601E91711957D00E819A3 /* main.m */,
-				565601EB1711957D00E819A3 /* Metatone Lonsdale-Prefix.pch */,
+				565601EB1711957D00E819A3 /* MetaLonsdale-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -1546,9 +1542,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		565601D91711957D00E819A3 /* Metatone Lonsdale */ = {
+		565601D91711957D00E819A3 /* MetaLonsdale */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 565602151711957D00E819A3 /* Build configuration list for PBXNativeTarget "Metatone Lonsdale" */;
+			buildConfigurationList = 565602151711957D00E819A3 /* Build configuration list for PBXNativeTarget "MetaLonsdale" */;
 			buildPhases = (
 				565601D61711957D00E819A3 /* Sources */,
 				565601D71711957D00E819A3 /* Frameworks */,
@@ -1558,14 +1554,14 @@
 			);
 			dependencies = (
 			);
-			name = "Metatone Lonsdale";
+			name = MetaLonsdale;
 			productName = Metatone;
-			productReference = 565601DA1711957D00E819A3 /* Metatone Lonsdale.app */;
+			productReference = 565601DA1711957D00E819A3 /* MetaLonsdale.app */;
 			productType = "com.apple.product-type.application";
 		};
-		565602021711957D00E819A3 /* Metatone LonsdaleTests */ = {
+		565602021711957D00E819A3 /* MetaLonsdaleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 565602181711957D00E819A3 /* Build configuration list for PBXNativeTarget "Metatone LonsdaleTests" */;
+			buildConfigurationList = 565602181711957D00E819A3 /* Build configuration list for PBXNativeTarget "MetaLonsdaleTests" */;
 			buildPhases = (
 				565601FE1711957D00E819A3 /* Sources */,
 				565601FF1711957D00E819A3 /* Frameworks */,
@@ -1577,9 +1573,9 @@
 			dependencies = (
 				565602091711957D00E819A3 /* PBXTargetDependency */,
 			);
-			name = "Metatone LonsdaleTests";
+			name = MetaLonsdaleTests;
 			productName = MetatoneTests;
-			productReference = 565602031711957D00E819A3 /* Metatone LonsdaleTests.octest */;
+			productReference = 565602031711957D00E819A3 /* MetaLonsdaleTests.octest */;
 			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 /* End PBXNativeTarget section */
@@ -1598,7 +1594,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 565601D51711957D00E819A3 /* Build configuration list for PBXProject "Metatone Lonsdale" */;
+			buildConfigurationList = 565601D51711957D00E819A3 /* Build configuration list for PBXProject "MetaLonsdale" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -1616,8 +1612,8 @@
 			);
 			projectRoot = "";
 			targets = (
-				565601D91711957D00E819A3 /* Metatone Lonsdale */,
-				565602021711957D00E819A3 /* Metatone LonsdaleTests */,
+				565601D91711957D00E819A3 /* MetaLonsdale */,
+				565602021711957D00E819A3 /* MetaLonsdaleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -2110,7 +2106,7 @@
 /* Begin PBXTargetDependency section */
 		565602091711957D00E819A3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 565601D91711957D00E819A3 /* Metatone Lonsdale */;
+			target = 565601D91711957D00E819A3 /* MetaLonsdale */;
 			targetProxy = 565602081711957D00E819A3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -2214,11 +2210,11 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Metatone/Metatone Lonsdale-Prefix.pch";
-				INFOPLIST_FILE = "Metatone/Metatone Lonsdale-Info.plist";
+				GCC_PREFIX_HEADER = "Metatone/MetaLonsdale-Prefix.pch";
+				INFOPLIST_FILE = "Metatone/MetaLonsdale-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "-licucore";
-				PRODUCT_NAME = "Metatone Lonsdale";
+				PRODUCT_NAME = MetaLonsdale;
 				PROVISIONING_PROFILE = "";
 				USER_HEADER_SEARCH_PATHS = "../pd-for-ios/libpd/** ../CocoaOSC/**";
 				WRAPPER_EXTENSION = app;
@@ -2232,12 +2228,12 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Metatone/Metatone Lonsdale-Prefix.pch";
-				INFOPLIST_FILE = "Metatone/Metatone Lonsdale-Info.plist";
+				GCC_PREFIX_HEADER = "Metatone/MetaLonsdale-Prefix.pch";
+				INFOPLIST_FILE = "Metatone/MetaLonsdale-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-licucore";
-				PRODUCT_NAME = "Metatone Lonsdale";
+				PRODUCT_NAME = MetaLonsdale;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				USER_HEADER_SEARCH_PATHS = "../pd-for-ios/libpd/** ../CocoaOSC/**";
@@ -2256,7 +2252,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Metatone/Metatone-Prefix.pch";
 				INFOPLIST_FILE = "MetatoneTests/Metatone LonsdaleTests-Info.plist";
-				PRODUCT_NAME = "Metatone LonsdaleTests";
+				PRODUCT_NAME = MetaLonsdaleTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -2273,7 +2269,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Metatone/Metatone-Prefix.pch";
 				INFOPLIST_FILE = "MetatoneTests/Metatone LonsdaleTests-Info.plist";
-				PRODUCT_NAME = "Metatone LonsdaleTests";
+				PRODUCT_NAME = MetaLonsdaleTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -2282,7 +2278,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		565601D51711957D00E819A3 /* Build configuration list for PBXProject "Metatone Lonsdale" */ = {
+		565601D51711957D00E819A3 /* Build configuration list for PBXProject "MetaLonsdale" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				565602131711957D00E819A3 /* Debug */,
@@ -2291,7 +2287,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		565602151711957D00E819A3 /* Build configuration list for PBXNativeTarget "Metatone Lonsdale" */ = {
+		565602151711957D00E819A3 /* Build configuration list for PBXNativeTarget "MetaLonsdale" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				565602161711957D00E819A3 /* Debug */,
@@ -2300,7 +2296,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		565602181711957D00E819A3 /* Build configuration list for PBXNativeTarget "Metatone LonsdaleTests" */ = {
+		565602181711957D00E819A3 /* Build configuration list for PBXNativeTarget "MetaLonsdaleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				565602191711957D00E819A3 /* Debug */,
