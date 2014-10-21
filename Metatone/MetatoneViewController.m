@@ -357,7 +357,7 @@ void arraysize_setup();
         self.scaleMode = [state intValue];
         // update scale label
         if (self.scaleMode == SCALE_MODE_F_MIXO) [self.scaleLabel setText:@"F Mixo"];
-        if (self.scaleMode == SCALE_MODE_C_LYDSHARP) [self.scaleLabel setText:@"C Lyd Sharp 5"];
+        if (self.scaleMode == SCALE_MODE_C_LYDSHARP) [self.scaleLabel setText:@"C Lyd #5"];
         if (self.scaleMode == SCALE_MODE_FSHARP_LYD) [self.scaleLabel setText:@"F# Lydian"];
         
     } else if ([name isEqualToString:METATONE_RESET_MESSAGE]) {
