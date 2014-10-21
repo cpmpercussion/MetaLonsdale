@@ -16,7 +16,7 @@
 @interface LoopingNote : NSObject
 
 @property (nonatomic) CGPoint notePoint;
-@property (nonatomic) CGPoint center;
+//@property (nonatomic) CGPoint center;
 @property (nonatomic) int loopsLeft;
 @property (nonatomic) float loopTime;
 @property (weak,nonatomic) id<LoopingNoteDelegate> delegate;

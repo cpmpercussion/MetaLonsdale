@@ -26,20 +26,26 @@
     self.loopTime = loopTime /1000; //convert from Milliseconds to Seconds
     self.delegate = delegate;
     self.enabled = YES;
-    
     //NSLog([NSString stringWithFormat:@"Loop created with LoopsLeft:%d and LoopTime:%f seconds.", self.loopsLeft, self.loopTime]);
     
     // Schedule first timer.
     [self scheduleLoop];
     
-    if ([delegate isKindOfClass:[MetatoneViewController class]]) {
-        self.center = ((MetatoneViewController *)delegate).view.center;
-    } else {
-        self.center = CGPointMake(X_CENTER, Y_CENTER);
-    }
-    
+    //    if ([delegate isKindOfClass:[MetatoneViewController class]]) {
+    //        self.center = ((MetatoneViewController *)delegate).view.center;
+    //    } else {
+    //        self.center = CGPointMake(X_CENTER, Y_CENTER);
+    //    }
     
     return self;
+}
+
+- (CGPoint) findCenter {
+    if ([self.delegate isKindOfClass:[MetatoneViewController class]]) {
+        return ((MetatoneViewController *)self.delegate).view.center;
+    } else {
+        return CGPointMake(X_CENTER, Y_CENTER);
+    }
 }
 
 // Delegated Method
@@ -54,9 +60,11 @@
     self.loopsLeft--;
     
     // Do some kind of notePoint Degradation...
+    CGPoint currentCenter = [self findCenter];
+    //    NSLog(@"Updated Center: x: %f, y: %f",currentCenter.x,currentCenter.y);
     CGFloat delta = DELTA + (1- DELTA) * ((float)arc4random()/0x100000000);
-    CGFloat newX = delta * (self.notePoint.x) + (1 - delta) * self.center.y;
-    CGFloat newY = delta * (self.notePoint.y) + (1 - delta) * self.center.x;
+    CGFloat newX = delta * (self.notePoint.x) + (1 - delta) * currentCenter.x;
+    CGFloat newY = delta * (self.notePoint.y) + (1 - delta) * currentCenter.y;
     self.notePoint = CGPointMake(newX, newY);
     
     // Do some kind of loopTime Degradation...
@@ -68,7 +76,7 @@
 }
 
 -(void) scheduleLoop {
-    [NSTimer scheduledTimerWithTimeInterval:self.loopTime target:self selector:@selector(playLoopingNote) userInfo:Nil repeats:NO];    
+    [NSTimer scheduledTimerWithTimeInterval:self.loopTime target:self selector:@selector(playLoopingNote) userInfo:Nil repeats:NO];
 }
 
 -(void) enable {
