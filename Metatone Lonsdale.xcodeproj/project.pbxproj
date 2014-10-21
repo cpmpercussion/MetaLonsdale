@@ -1591,7 +1591,7 @@
 			attributes = {
 				CLASSPREFIX = Metatone;
 				LastTestingUpgradeCheck = 0600;
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = "Charles Martin";
 				TargetAttributes = {
 					565601D91711957D00E819A3 = {
@@ -2237,7 +2237,7 @@
 				GCC_PREFIX_HEADER = "Metatone/Metatone Lonsdale-Prefix.pch";
 				INFOPLIST_FILE = "Metatone/Metatone Lonsdale-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-licucore";
 				PRODUCT_NAME = "Metatone Lonsdale";
 				PROVISIONING_PROFILE = "";
