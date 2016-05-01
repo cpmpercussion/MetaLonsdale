@@ -1,5 +1,6 @@
 ## MetaLonsdale
 
+[![DOI](https://zenodo.org/badge/20166/cpmpercussion/MetaLonsdale.svg)](https://zenodo.org/badge/latestdoi/20166/cpmpercussion/MetaLonsdale)
 
 <a href="https://www.flickr.com/photos/chuck_notorious/13959689662" title="MetaLonsdale iPad App by Charles Martin, on Flickr"><img src="https://farm8.staticflickr.com/7153/13959689662_4e5df8aed0_c.jpg" width="800" height="572" alt="MetaLonsdale iPad App"></a>
 
