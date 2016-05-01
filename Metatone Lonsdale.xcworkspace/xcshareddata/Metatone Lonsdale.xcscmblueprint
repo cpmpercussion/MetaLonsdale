@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "013EC0084E093F2B16FFF43C2E31B91A2AD93C9D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "5C788FB45371F7A39B6FFB445D10D0EF209EBAE3" : 0,
+    "8290155778CD077C9D8A85EC03BEA069395BD6EA" : 0,
+    "013EC0084E093F2B16FFF43C2E31B91A2AD93C9D" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "9CCFF8F3-E81C-42E8-846B-CC424C852708",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "5C788FB45371F7A39B6FFB445D10D0EF209EBAE3" : "MetaLonsdale\/MetatoneMIDI\/",
+    "8290155778CD077C9D8A85EC03BEA069395BD6EA" : "MetaLonsdale\/MetatoneOSC\/",
+    "013EC0084E093F2B16FFF43C2E31B91A2AD93C9D" : "MetaLonsdale\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Metatone Lonsdale",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Metatone Lonsdale.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/cpmpercussion\/MetaLonsdale.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "013EC0084E093F2B16FFF43C2E31B91A2AD93C9D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/cpmpercussion\/MetatoneMIDI",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5C788FB45371F7A39B6FFB445D10D0EF209EBAE3"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/cpmpercussion\/MetatoneOSC",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8290155778CD077C9D8A85EC03BEA069395BD6EA"
+    }
+  ]
+}
