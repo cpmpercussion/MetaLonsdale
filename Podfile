@@ -5,5 +5,6 @@
 
 target 'Metatone Lonsdale' do
   pod 'libpd', :git => 'https://github.com/libpd/libpd', :submodules => true
+  pod 'SocketRocket'
 end
 
