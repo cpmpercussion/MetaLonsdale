@@ -37,8 +37,7 @@
 		565601E81711957D00E819A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 565601E61711957D00E819A3 /* InfoPlist.strings */; };
 		565601EA1711957D00E819A3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 565601E91711957D00E819A3 /* main.m */; };
 		565601EE1711957D00E819A3 /* MetatoneAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 565601ED1711957D00E819A3 /* MetatoneAppDelegate.m */; };
-		565601F71711957D00E819A3 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 565601F51711957D00E819A3 /* MainStoryboard_iPhone.storyboard */; };
-		565601FA1711957D00E819A3 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 565601F81711957D00E819A3 /* MainStoryboard_iPad.storyboard */; };
+		565601F71711957D00E819A3 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 565601F51711957D00E819A3 /* MainStoryboard.storyboard */; };
 		565601FD1711957D00E819A3 /* MetatoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 565601FC1711957D00E819A3 /* MetatoneViewController.m */; };
 		5659731B17AC9FF100D4158A /* gong78.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5659731A17AC9FF100D4158A /* gong78.wav */; };
 		5673A95E19EF526C00B0ACDF /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5673A95D19EF526C00B0ACDF /* CoreMIDI.framework */; };
@@ -483,8 +482,7 @@
 		565601EB1711957D00E819A3 /* Metatone Lonsdale-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Metatone Lonsdale-Prefix.pch"; sourceTree = "<group>"; };
 		565601EC1711957D00E819A3 /* MetatoneAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetatoneAppDelegate.h; sourceTree = "<group>"; };
 		565601ED1711957D00E819A3 /* MetatoneAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MetatoneAppDelegate.m; sourceTree = "<group>"; };
-		565601F61711957D00E819A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		565601F91711957D00E819A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		565601F61711957D00E819A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		565601FB1711957D00E819A3 /* MetatoneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetatoneViewController.h; sourceTree = "<group>"; };
 		565601FC1711957D00E819A3 /* MetatoneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MetatoneViewController.m; sourceTree = "<group>"; };
 		5659731A17AC9FF100D4158A /* gong78.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = gong78.wav; sourceTree = "<group>"; };
@@ -1021,8 +1019,7 @@
 				56BD3CC51712FA39004FBB65 /* metatone-instrument */,
 				565601EC1711957D00E819A3 /* MetatoneAppDelegate.h */,
 				565601ED1711957D00E819A3 /* MetatoneAppDelegate.m */,
-				565601F51711957D00E819A3 /* MainStoryboard_iPhone.storyboard */,
-				565601F81711957D00E819A3 /* MainStoryboard_iPad.storyboard */,
+				565601F51711957D00E819A3 /* MainStoryboard.storyboard */,
 				56D9F2F4171E592600B28B75 /* MetatoneTouchView.h */,
 				56D9F2F5171E592600B28B75 /* MetatoneTouchView.m */,
 				565601FB1711957D00E819A3 /* MetatoneViewController.h */,
@@ -1568,8 +1565,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				565601E81711957D00E819A3 /* InfoPlist.strings in Resources */,
-				565601F71711957D00E819A3 /* MainStoryboard_iPhone.storyboard in Resources */,
-				565601FA1711957D00E819A3 /* MainStoryboard_iPad.storyboard in Resources */,
+				565601F71711957D00E819A3 /* MainStoryboard.storyboard in Resources */,
 				56BD3E3D1712FA3A004FBB65 /* bellsynth.pd in Resources */,
 				56BD3E3E1712FA3A004FBB65 /* bowlsynth.pd in Resources */,
 				56BD3E421712FA3A004FBB65 /* m_mixolydian.pd in Resources */,
@@ -2061,20 +2057,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		565601F51711957D00E819A3 /* MainStoryboard_iPhone.storyboard */ = {
+		565601F51711957D00E819A3 /* MainStoryboard.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				565601F61711957D00E819A3 /* en */,
 			);
-			name = MainStoryboard_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		565601F81711957D00E819A3 /* MainStoryboard_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				565601F91711957D00E819A3 /* en */,
-			);
-			name = MainStoryboard_iPad.storyboard;
+			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
