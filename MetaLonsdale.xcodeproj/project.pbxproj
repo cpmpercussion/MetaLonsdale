@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4F32D2E78106288746597373 /* libPods-Metatone Lonsdale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E493D589713BA239349D5B /* libPods-Metatone Lonsdale.a */; };
 		560BADDF1721787400859880 /* s_looper_open.pd in Resources */ = {isa = PBXBuildFile; fileRef = 560BADDE1721787400859880 /* s_looper_open.pd */; };
 		561CDFEA17880CA2009ECCFA /* m_lydian.pd in Resources */ = {isa = PBXBuildFile; fileRef = 561CDFE817880CA2009ECCFA /* m_lydian.pd */; };
 		561CDFEB17880CA2009ECCFA /* m_lydiansharp5.pd in Resources */ = {isa = PBXBuildFile; fileRef = 561CDFE917880CA2009ECCFA /* m_lydiansharp5.pd */; };
@@ -441,8 +440,6 @@
 /* Begin PBXFileReference section */
 		16C2DE788766717F0EEF1910 /* Pods-MetaLonsdale.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetaLonsdale.release.xcconfig"; path = "Pods/Target Support Files/Pods-MetaLonsdale/Pods-MetaLonsdale.release.xcconfig"; sourceTree = "<group>"; };
 		172AFA73FD05C20F9C21E17F /* Pods-MetaLonsdale.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetaLonsdale.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MetaLonsdale/Pods-MetaLonsdale.debug.xcconfig"; sourceTree = "<group>"; };
-		24BCAD222E52E6A850E86E16 /* Pods-Metatone Lonsdale.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Metatone Lonsdale.release.xcconfig"; path = "Pods/Target Support Files/Pods-Metatone Lonsdale/Pods-Metatone Lonsdale.release.xcconfig"; sourceTree = "<group>"; };
-		30E0BA3ED6FC8D62FE26BB2F /* Pods-Metatone Lonsdale.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Metatone Lonsdale.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Metatone Lonsdale/Pods-Metatone Lonsdale.debug.xcconfig"; sourceTree = "<group>"; };
 		49E493D589713BA239349D5B /* libPods-Metatone Lonsdale.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Metatone Lonsdale.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		560BADDE1721787400859880 /* s_looper_open.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = s_looper_open.pd; sourceTree = "<group>"; };
 		561CDFE817880CA2009ECCFA /* m_lydian.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = m_lydian.pd; sourceTree = "<group>"; };
@@ -924,7 +921,6 @@
 				565601DE1711957D00E819A3 /* UIKit.framework in Frameworks */,
 				565601E01711957D00E819A3 /* Foundation.framework in Frameworks */,
 				565601E21711957D00E819A3 /* CoreGraphics.framework in Frameworks */,
-				4F32D2E78106288746597373 /* libPods-Metatone Lonsdale.a in Frameworks */,
 				90FE7238854E60F690806466 /* libPods-MetaLonsdale.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -935,8 +931,6 @@
 		0136E7469821CAEFB145F68F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				30E0BA3ED6FC8D62FE26BB2F /* Pods-Metatone Lonsdale.debug.xcconfig */,
-				24BCAD222E52E6A850E86E16 /* Pods-Metatone Lonsdale.release.xcconfig */,
 				172AFA73FD05C20F9C21E17F /* Pods-MetaLonsdale.debug.xcconfig */,
 				16C2DE788766717F0EEF1910 /* Pods-MetaLonsdale.release.xcconfig */,
 			);
