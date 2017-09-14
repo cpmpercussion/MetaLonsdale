@@ -2171,7 +2171,7 @@
 				INFOPLIST_FILE = "Metatone/MetaLonsdale-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = "au.com.charlesmartin.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "au.com.charlesmartin.Metatone-Lonsdale";
 				PRODUCT_NAME = MetaLonsdale;
 				PROVISIONING_PROFILE = "";
 				USER_HEADER_SEARCH_PATHS = "../pd-for-ios/libpd/** ../CocoaOSC/**";
@@ -2192,7 +2192,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = "au.com.charlesmartin.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "au.com.charlesmartin.Metatone-Lonsdale";
 				PRODUCT_NAME = MetaLonsdale;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
