@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F32D2E78106288746597373 /* libPods-Metatone Lonsdale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E493D589713BA239349D5B /* libPods-Metatone Lonsdale.a */; };
 		560BADDF1721787400859880 /* s_looper_open.pd in Resources */ = {isa = PBXBuildFile; fileRef = 560BADDE1721787400859880 /* s_looper_open.pd */; };
 		561CDFEA17880CA2009ECCFA /* m_lydian.pd in Resources */ = {isa = PBXBuildFile; fileRef = 561CDFE817880CA2009ECCFA /* m_lydian.pd */; };
 		561CDFEB17880CA2009ECCFA /* m_lydiansharp5.pd in Resources */ = {isa = PBXBuildFile; fileRef = 561CDFE917880CA2009ECCFA /* m_lydiansharp5.pd */; };
@@ -435,11 +436,12 @@
 		56D9F2ED171E2EF100B28B75 /* LoopingNote.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D9F2EC171E2EF100B28B75 /* LoopingNote.m */; };
 		56D9F2F6171E592600B28B75 /* MetatoneTouchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D9F2F5171E592600B28B75 /* MetatoneTouchView.m */; };
 		56D9F2F8171E79A200B28B75 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56D9F2F7171E79A200B28B75 /* QuartzCore.framework */; };
-		ABBB4913FE0A4FC9E8209971 /* libPods-Metatone Lonsdale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E833A70DB9542E7C362F362 /* libPods-Metatone Lonsdale.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		04ECD7AABBC0A2A49CDB25E7 /* Pods-Metatone Lonsdale.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Metatone Lonsdale.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Metatone Lonsdale/Pods-Metatone Lonsdale.debug.xcconfig"; sourceTree = "<group>"; };
+		24BCAD222E52E6A850E86E16 /* Pods-Metatone Lonsdale.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Metatone Lonsdale.release.xcconfig"; path = "Pods/Target Support Files/Pods-Metatone Lonsdale/Pods-Metatone Lonsdale.release.xcconfig"; sourceTree = "<group>"; };
+		30E0BA3ED6FC8D62FE26BB2F /* Pods-Metatone Lonsdale.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Metatone Lonsdale.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Metatone Lonsdale/Pods-Metatone Lonsdale.debug.xcconfig"; sourceTree = "<group>"; };
+		49E493D589713BA239349D5B /* libPods-Metatone Lonsdale.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Metatone Lonsdale.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		560BADDE1721787400859880 /* s_looper_open.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = s_looper_open.pd; sourceTree = "<group>"; };
 		561CDFE817880CA2009ECCFA /* m_lydian.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = m_lydian.pd; sourceTree = "<group>"; };
 		561CDFE917880CA2009ECCFA /* m_lydiansharp5.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = m_lydiansharp5.pd; sourceTree = "<group>"; };
@@ -904,8 +906,6 @@
 		56D9F2F4171E592600B28B75 /* MetatoneTouchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetatoneTouchView.h; sourceTree = "<group>"; };
 		56D9F2F5171E592600B28B75 /* MetatoneTouchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MetatoneTouchView.m; sourceTree = "<group>"; };
 		56D9F2F7171E79A200B28B75 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		7E833A70DB9542E7C362F362 /* libPods-Metatone Lonsdale.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Metatone Lonsdale.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D94F2877F25F220F825DF7D /* Pods-Metatone Lonsdale.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Metatone Lonsdale.release.xcconfig"; path = "Pods/Target Support Files/Pods-Metatone Lonsdale/Pods-Metatone Lonsdale.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -922,13 +922,22 @@
 				565601DE1711957D00E819A3 /* UIKit.framework in Frameworks */,
 				565601E01711957D00E819A3 /* Foundation.framework in Frameworks */,
 				565601E21711957D00E819A3 /* CoreGraphics.framework in Frameworks */,
-				ABBB4913FE0A4FC9E8209971 /* libPods-Metatone Lonsdale.a in Frameworks */,
+				4F32D2E78106288746597373 /* libPods-Metatone Lonsdale.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0136E7469821CAEFB145F68F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				30E0BA3ED6FC8D62FE26BB2F /* Pods-Metatone Lonsdale.debug.xcconfig */,
+				24BCAD222E52E6A850E86E16 /* Pods-Metatone Lonsdale.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		561CE00417881A7B009ECCFA /* pd-externs */ = {
 			isa = PBXGroup;
 			children = (
@@ -977,7 +986,7 @@
 				565601E31711957D00E819A3 /* Metatone */,
 				565601DC1711957D00E819A3 /* Frameworks */,
 				565601DB1711957D00E819A3 /* Products */,
-				F3D645183F3BBB3492B85F78 /* Pods */,
+				0136E7469821CAEFB145F68F /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1001,7 +1010,7 @@
 				565601DD1711957D00E819A3 /* UIKit.framework */,
 				565601DF1711957D00E819A3 /* Foundation.framework */,
 				565601E11711957D00E819A3 /* CoreGraphics.framework */,
-				7E833A70DB9542E7C362F362 /* libPods-Metatone Lonsdale.a */,
+				49E493D589713BA239349D5B /* libPods-Metatone Lonsdale.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1497,15 +1506,6 @@
 			path = rj;
 			sourceTree = "<group>";
 		};
-		F3D645183F3BBB3492B85F78 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				04ECD7AABBC0A2A49CDB25E7 /* Pods-Metatone Lonsdale.debug.xcconfig */,
-				9D94F2877F25F220F825DF7D /* Pods-Metatone Lonsdale.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1513,12 +1513,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 565602151711957D00E819A3 /* Build configuration list for PBXNativeTarget "Metatone Lonsdale" */;
 			buildPhases = (
-				616D5313F2E06A8758A528FA /* Check Pods Manifest.lock */,
+				B6D1068F681729D15AD87961 /* [CP] Check Pods Manifest.lock */,
 				565601D61711957D00E819A3 /* Sources */,
 				565601D71711957D00E819A3 /* Frameworks */,
 				565601D81711957D00E819A3 /* Resources */,
-				4273C1415CE183400AAFACCB /* Embed Pods Frameworks */,
-				479F21344E15EC203AAAD94D /* Copy Pods Resources */,
+				327BFA96EA031B1803900F8C /* [CP] Embed Pods Frameworks */,
+				CFA8796DE1F4A085B1C63BBB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1966,14 +1966,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4273C1415CE183400AAFACCB /* Embed Pods Frameworks */ = {
+		327BFA96EA031B1803900F8C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1981,34 +1981,37 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Metatone Lonsdale/Pods-Metatone Lonsdale-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		479F21344E15EC203AAAD94D /* Copy Pods Resources */ = {
+		B6D1068F681729D15AD87961 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Metatone Lonsdale-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CFA8796DE1F4A085B1C63BBB /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Metatone Lonsdale/Pods-Metatone Lonsdale-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		616D5313F2E06A8758A528FA /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -2144,7 +2147,7 @@
 		};
 		565602161711957D00E819A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 04ECD7AABBC0A2A49CDB25E7 /* Pods-Metatone Lonsdale.debug.xcconfig */;
+			baseConfigurationReference = 30E0BA3ED6FC8D62FE26BB2F /* Pods-Metatone Lonsdale.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -2164,7 +2167,7 @@
 		};
 		565602171711957D00E819A3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9D94F2877F25F220F825DF7D /* Pods-Metatone Lonsdale.release.xcconfig */;
+			baseConfigurationReference = 24BCAD222E52E6A850E86E16 /* Pods-Metatone Lonsdale.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
